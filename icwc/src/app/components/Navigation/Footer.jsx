@@ -22,7 +22,7 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="relative w-full">
+    <footer className="relative w-full mt-[10%]">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="w-full flex flex-col justify-center items-center">
           <div className="w-full h-full flex-col justify-start items-center gap-8 inline-flex mb-4">
