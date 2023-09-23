@@ -32,7 +32,7 @@ export default function Services() {
                 </div>
                 <div className="self-stretch text-white max-w-[400px] text-gray-400 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
                   Our expert team will assess your watch and provide a detailed
-                  restoration plan to return it to it's original glory.
+                  restoration plan to return it to it&apos;s original glory.
                 </div>
               </div>
             </div>

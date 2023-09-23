@@ -14,9 +14,10 @@ export default function Sourcing() {
           </div>
           <div className="h-full grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex bg-[#182835] py-12  h-full">
             <div className="self-stretch max-w-[400px] text-gray-800 text-[1.2rem] font-normal font-['Roboto'] leading-[27px] text-white ">
-              We’ll source and qualify the watch you’re looking for, even if we
-              don’t have it. You tell us the specs, we’ll find it. Our team will
-              look far and wide for that specific timepiece.
+              We&apos;ll source and qualify the watch you&apos;re looking for,
+              even if we don&apos;t have it. You tell us the specs, we&apos;ll
+              find it. Our team will look far and wide for that specific
+              timepiece.
             </div>
             <div className="pt-4 justify-start items-start gap-4 inline-flex">
               <div className="px-6 py-3 bg-white border border-gray-800 justify-center items-center gap-2 flex">
