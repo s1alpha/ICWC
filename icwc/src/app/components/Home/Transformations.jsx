@@ -1,3 +1,12 @@
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+  Card,
+} from "@material-tailwind/react";
+
 import Image from "next/image";
 import StopWatch from "../../../../public/Images/StopWatch.png";
 import WatchesRow from "../../../../public/Images/WatchesRow.jpg";
@@ -34,9 +43,12 @@ export default function Transformations() {
           </h5>
         </div>
         <div className="w-full flex justify-center  items-center z-[6]">
-          <button className=" px-2 py-1 min-w-[200px] bg-white  text-xl text-gray-800 ">
+          <Button
+            variant="gradiant"
+            className=" px-2 py-1 min-w-[200px] bg-white  text-xl text-gray-800 "
+          >
             Reach Out
-          </button>
+          </Button>
         </div>
       </section>
     </>

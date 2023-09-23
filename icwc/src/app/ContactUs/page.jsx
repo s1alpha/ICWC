@@ -6,11 +6,21 @@ import FixingWatch from "../../../public/Images/FixingWatchFar.png";
 import PearlIcon from "../../../public/LogoImages/Pearl_Icon.png";
 import Image from "next/image";
 
+import { useForm } from "react-hook-form";
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+  Card,
+} from "@material-tailwind/react";
+
 export default function ContactUs() {
   return (
     <>
       <Header />
-      <div className="w-full h-full px-16 py-28 bg-white flex-col justify-start items-start gap-20 inline-flex">
+      <div className="w-full h-full px-16 py-28 bg-white flex-col justify-start items-start gap-20 inline-flex my-[5%]">
         <div className="self-stretch flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-start gap-20 inline-flex">
           <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
             <div className="self-stretch h-[149px] flex-col justify-start items-start gap-4 flex">
@@ -47,5 +57,19 @@ export default function ContactUs() {
 }
 
 export function Form() {
-  return <></>;
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+  return (
+    <>
+      <form className="bg-[#182835]" onSubmit={handleSubmit(onSubmit)}>
+        <input {...register("Name")} name="Name" />
+        <Button type="submit">Submit</Button>
+      </form>
+    </>
+  );
 }

@@ -7,7 +7,7 @@ import Cert from "../../../../public/Icons/Certificate.svg";
 export default function Services() {
   return (
     <>
-      <div className="w-full bg-[#182835] h-full px-16 py-28 bg-white flex-col justify-start items-start gap-20 inline-flex">
+      <div className="w-full bg-[#182835]  h-full px-16 py-28 flex-col justify-start items-start gap-20 inline-flex">
         <div className="self-stretch flex flex-col lg:flex-row justify-center items-start gap-24 inline-flex">
           <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
             <div className="self-stretch h-full flex-col justify-start items-start gap-6 flex">
@@ -30,9 +30,9 @@ export default function Services() {
                 <div className="self-stretch text-white text-[2.5rem] h-full lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
                   Restorations with Care
                 </div>
-                <div className="self-stretch text-white max-w-[400px] text-gray-400 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
+                <div className="self-stretch max-w-[400px] text-gray-400 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
                   Our expert team will assess your watch and provide a detailed
-                  restoration plan to return it to it&apos;s original glory.
+                  restoration plan to return it to its original glory.
                 </div>
               </div>
             </div>

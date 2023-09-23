@@ -137,7 +137,7 @@ export default function Header() {
         </div>
         <MobileNav
           open={openNav}
-          className="flex flex-col justify-center items-center bg-red-200 h-full "
+          className="flex flex-col justify-center items-center h-full "
         >
           <div className="h-full">{navList}</div>
 

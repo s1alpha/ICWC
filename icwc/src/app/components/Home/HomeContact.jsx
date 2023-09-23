@@ -12,7 +12,7 @@ export default function HomeContact() {
   return (
     <>
       <div className="w-full max-w-[1600px] overflow-hidden h-full px-16 my-[5%] py-28 bg-white flex-col justify-start items-start gap-20 inline-flex">
-        <div className="h-full flex-col justify-start items-start gap-4 flex lg:mb-12">
+        <div className="h-full flex-col justify-start items-start gap-0 flex lg:mb-12">
           <div className="text-center font-bold font-['Roboto'] text-gray-600 text-xl font-['Roboto'] leading-normal">
             NEED HELP?
           </div>
