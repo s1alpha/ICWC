@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import LogoAqua from "../../../../public/LogoImages/Logo ICWC_Aqua_Icon.png";
+import LogoPearl from "../../../../public/LogoImages/Pearl_Icon.png";
 
 const LINKS = [
   {
@@ -26,24 +27,31 @@ export default function Footer() {
         <div className="w-full flex flex-col justify-center items-center">
           <div className="w-full h-full flex-col justify-start items-center gap-8 inline-flex mb-4">
             <div className="flex-col justify-center items-center gap-6 flex">
-              <Image src={LogoAqua} className="w-[100px] h-full object-cover" />
+              <Image
+                src={LogoAqua}
+                className="w-[100px] dark:hidden h-full object-cover"
+              />
+              <Image
+                src={LogoPearl}
+                className="w-[100px] dark:flex hidden h-full object-cover"
+              />
             </div>
             <div className="flex flex-row justify-center items-center gap-8 inline-flex">
               <a
                 href="#"
-                className="w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
+                className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
                 Services
               </a>
               <a
                 href="#"
-                className="w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
+                className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
                 WatchRepair
               </a>
               <a
                 href="/ContactUs"
-                className="w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
+                className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
                 Contact Us
               </a>

@@ -10,14 +10,14 @@ import {
 export default function Sourcing() {
   return (
     <>
-      <div className="w-full h-full max-w-[1600px] bg-[#182835] px-16 py-20 lg:py-[5%] my-[5%] flex-col justify-center items-start gap-20 inline-flex">
+      <div className="w-full h-full max-w-[1600px] bg-[#182835] px-8 lg:px-16 py-20 lg:py-[5%] my-[5%] flex-col justify-center items-start gap-20 inline-flex">
         <div className="self-stretch flex flex-col h-full lg:flex-row justify-start lg:items-start gap-6 lg:gap-20 inline-flex">
           <div className="grow shrink basis-0  lg:text-left text-center">
             <span className="text-neutral-400 text-[2.5rem] lg:text-2xl font-bold font-['Roboto'] leading-[28.80px]">
               TIMEPIECE SOURCING
               <br />
             </span>
-            <span className="text-gray-800 text-white mt-4 p-1 text-5xl font-bold font-['Roboto'] leading-[57.60px]">
+            <span className="text-gray-800 text-white mt-4 pt-1 text-5xl font-bold font-['Roboto'] leading-[57.60px]">
               Looking to acquire a watch?
             </span>
           </div>
