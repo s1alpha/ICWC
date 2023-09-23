@@ -21,18 +21,15 @@ export default function MainHero() {
           <Image src={WorkTable} className="object-cover h-full w-full" />
         </div>
         <div className="pl-[5%] flex flex-col justify-center items-left lg:items-left w-full z-[4]">
-          <Image src={PearlIcon} className="h-32 w-32 mb-12 lg:mb-4 " />
-          <Image src={PearlText} className=" w-[300px] lg:w-[400px] " />
+          <div className="w-full hidden lg:flex flex-col justify-center items-left ">
+            <Image src={PearlIcon} className="h-32 w-28 mb-12 lg:mb-4 " />
+            <Image src={PearlText} className=" w-[300px] lg:w-[400px] " />
+          </div>
+          <div className="lg:hidden w-full flex flex-col justify-center items-center lg:items-left ">
+            <Image src={PearlIcon} className="h-24 w-24 mb-12 lg:mb-4 " />
+            <Image src={PearlText} className=" w-[300px] lg:w-[400px] " />
+          </div>
 
-          {/* <div className="flex flex-col justify-center mb-8">
-            <h1 className="font-extrabold text-white text-[64px] text-center md:text-left">
-              Title
-            </h1>
-            <Image src={PearlIcon} className="h-24" />
-            <h5 className="text-[24px] text-white text-center md:text-left">
-              SUBTITLE
-            </h5>
-          </div> */}
           <div className="w-full flex justify-center md:justify-start items-center mt-20 lg:mt-10">
             <a href="/ContactUs">
               <Button
