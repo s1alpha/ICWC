@@ -38,16 +38,16 @@ export default function Footer() {
             </div>
             <div className="flex flex-row justify-center items-center gap-8 inline-flex">
               <a
-                href="#"
+                href="/"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
-                Services
+                Home
               </a>
               <a
-                href="#"
+                href="/WatchRepair"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
-                Watch-Repair
+                WatchRepair
               </a>
               <a
                 href="/ContactUs"
