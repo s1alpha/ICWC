@@ -39,7 +39,7 @@ export default function Footer() {
                 href="#"
                 className="w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
-                Before&After
+                WatchRepair
               </a>
               <a
                 href="#"

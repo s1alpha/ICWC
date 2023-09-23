@@ -15,7 +15,7 @@ import PearlText from "../../../../public/LogoImages/Pearl_Text.png";
 export default function MainHero() {
   return (
     <>
-      <section className=" relative py-[5%] px-[5%] lg:px-[25%] w-full h-[100vh] lg:h-[70vh] overflow-hidden flex flex-col md:flex-row justify-center items-center">
+      <section className="relative py-[5%] lg:px-[25%] w-full h-[100vh] lg:h-[70vh] overflow-hidden flex flex-col md:flex-row justify-center items-left lg:items-center">
         <div className="absolute top-0 h-[100vh] lg:[70vh] w-full  bg-black opacity-50 z-[3]"></div>
         <div className="absolute top-0 h-[100vh] lg:[70vh]  bg-black bg-opacity-20 z-[2]">
           <Image src={WorkTable} className="object-cover h-full w-full" />
