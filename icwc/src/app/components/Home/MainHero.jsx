@@ -22,7 +22,7 @@ export default function MainHero() {
         </div>
         <div className="pl-[5%] flex flex-col justify-center items-left lg:items-left w-full z-[4]">
           <Image src={PearlIcon} className="h-32 w-32 mb-12 lg:mb-4 " />
-          <Image src={PearlText} className="w-[400px] " />
+          <Image src={PearlText} className=" w-[300px] lg:w-[400px] " />
 
           {/* <div className="flex flex-col justify-center mb-8">
             <h1 className="font-extrabold text-white text-[64px] text-center md:text-left">
