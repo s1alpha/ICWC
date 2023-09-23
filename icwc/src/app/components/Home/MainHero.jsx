@@ -34,12 +34,14 @@ export default function MainHero() {
             </h5>
           </div> */}
           <div className="w-full flex justify-center md:justify-start items-center mt-20 lg:mt-10">
-            <Button
-              variant="gradient"
-              className="rounded-sm px-2 py-2 min-w-[200px] bg-[#182835] text font-bold text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
-            >
-              REACH OUT
-            </Button>
+            <a href="/ContactUs">
+              <Button
+                variant="gradient"
+                className="rounded-sm px-2 py-2 min-w-[200px] bg-[#182835] text font-bold text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
+              >
+                REACH OUT
+              </Button>
+            </a>
           </div>
         </div>
         <div className="hidden md:flex h-full w-full"></div>

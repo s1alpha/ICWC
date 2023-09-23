@@ -29,12 +29,16 @@ export default function Sourcing() {
               timepiece.
             </div>
             <div className="pt-4 justify-start items-start gap-4 inline-flex">
-              <Button
-                variant="gradiant"
-                className="px-6 py-3 bg-white border border-gray-800 justify-center items-center gap-2 flex"
-              >
-                <p className="text-black text-xl font-['Roboto']">Contact Us</p>
-              </Button>
+              <a href="/ContactUs">
+                <Button
+                  variant="gradiant"
+                  className="px-6 py-3 bg-white border border-gray-800 justify-center items-center gap-2 flex"
+                >
+                  <p className="text-black text-xl font-['Roboto']">
+                    Contact Us
+                  </p>
+                </Button>
+              </a>
             </div>
           </div>
         </div>
