@@ -21,8 +21,8 @@ export default function MainHero() {
           <Image src={WorkTable} className="object-cover h-full w-full" />
         </div>
         <div className="pl-[5%] flex flex-col justify-center items-left lg:items-left w-full z-[4]">
-          <Image src={PearlIcon} className="h-48 w-48 mb-12 lg:mb-4 " />
-          <Image src={PearlText} className="w-[600px] " />
+          <Image src={PearlIcon} className="h-32 w-32 mb-12 lg:mb-4 " />
+          <Image src={PearlText} className="w-[400px] " />
 
           {/* <div className="flex flex-col justify-center mb-8">
             <h1 className="font-extrabold text-white text-[64px] text-center md:text-left">
