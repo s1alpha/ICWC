@@ -20,15 +20,15 @@ export default function ContactUs() {
   return (
     <>
       <Header />
-      <div className="w-full h-full px-16 py-28 bg-white flex-col justify-start items-start gap-20 inline-flex my-[5%]">
-        <div className="self-stretch flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-20 inline-flex">
-          <div className=" grow shrink basis-0 flex-col justify-start items-start inline-flex">
-            <div className="self-stretch h-[149px] flex-col justify-start items-start gap-0 flex">
+      <div className="w-full h-full px-8 lg:px-16 py-4 lg:py-28 bg-white flex-col justify-start items-start gap-20 inline-flex my-[5%]">
+        <div className="relative self-stretch flex flex-col lg:flex-row justify-center lg:justify-start lg:items-end gap-20 inline-flex">
+          <div className="relative grow shrink basis-0 flex-col justify-start items-start inline-flex">
+            <div className="self-stretch h-[149px] flex-col justify-start items-center lg:items-start gap-0 flex ">
               <div className="text-center font-bold font-['Roboto'] text-gray-600 text-xl font-['Roboto'] ">
                 NEED HELP?
               </div>
-              <div className="self-stretch h-[109px] flex-col justify-start items-start gap-1 flex">
-                <div className="self-stretch text-gray-800 text-5xl font-bold font-['Roboto'] leading-[57.60px]">
+              <div className="self-stretch h-[109px] w-full flex-col justify-start items-center lg:items-start gap-1 flex">
+                <div className="self-stretch text-center lg:text-left text-gray-800 text-5xl font-bold font-['Roboto'] leading-[57.60px]">
                   Get in Touch
                 </div>
                 {/* <div className="self-stretch text-gray-800 text-lg font-normal font-['Roboto'] leading-[27px]">
@@ -38,7 +38,7 @@ export default function ContactUs() {
             </div>
             <Form />
           </div>
-          <div className="relative lg:h-[600px] overflow-hidden h-full lg:max-w-[50vw]">
+          <div className="absolute top-0 left-0 lg:relative order-first lg:order-last relative lg:h-[600px] overflow-hidden h-full lg:max-w-[50vw]">
             <Image
               src={FixingWatch}
               alt="Fixing a watch"
@@ -69,12 +69,9 @@ export function Form() {
   return (
     <>
       <form
-        className=" px-4 py-2 w-full flex flex-col justify-center items-left"
+        className=" px-0 lg:px-4 py-2 w-full flex flex-col justify-center items-left"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <p className="lg:inline text-[12px] text-gray-400 mb-4">
-          WE DO NOT SEND PROMOTIONAL CONTENT UNLESS OPTED IN
-        </p>
         {/* <p className="mb-2 font-bold text-gray-600">Name:</p> */}
         <input
           {...register("name")}
@@ -83,6 +80,9 @@ export function Form() {
           className="shadow-inner p-2 border-b-2 border-gray-400 mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
         />
         {/* <p className="mb-2 text-gray-600 font-bold">Email: </p>{" "} */}
+        <p className="lg:inline text-[8px] lg:text-[12px] text-gray-400 mb-4 w-full text-center lg:text-left">
+          WE DO NOT SEND PROMOTIONAL CONTENT UNLESS OPTED IN
+        </p>
         <input
           {...register("email", {
             pattern: {
@@ -94,6 +94,7 @@ export function Form() {
           placeholder="Email"
           className="shadow-inner p-2 border-b-2 border-gray-400 mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
         />
+
         {/* <p className="mb-2 text-gray-600 font-bold">Interest:</p> */}
         <select
           name="type"

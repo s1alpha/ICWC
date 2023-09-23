@@ -52,7 +52,7 @@ export default function Transformations() {
               variant="gradiant"
               className=" px-2 py-1 min-w-[200px] bg-white  text-xl text-gray-800 font-['Roboto'] "
             >
-              Reach Out
+              See How
             </Button>
           </a>
         </div>

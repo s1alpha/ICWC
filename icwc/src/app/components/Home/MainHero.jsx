@@ -36,7 +36,7 @@ export default function MainHero() {
                 variant="gradient"
                 className="rounded-sm px-2 py-2 min-w-[200px] bg-[#182835] text font-bold text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
               >
-                REACH OUT
+                CONTACT US
               </Button>
             </a>
           </div>

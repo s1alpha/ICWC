@@ -31,7 +31,7 @@ export default function Header() {
         className="p-1 font-normal"
       >
         <a href="/WatchRepair" className="flex items-center">
-          Watch Repair
+          Watch-Repair
         </a>
       </Typography>
       {/* <Typography
@@ -93,7 +93,7 @@ export default function Header() {
                 href="/ContactUs"
                 className="hidden lg:inline-block bg-gray-800 px-6 py-1 rounded-sm"
               >
-                Reach Out
+                CONTACT US
               </Button>
             </a>
             <IconButton

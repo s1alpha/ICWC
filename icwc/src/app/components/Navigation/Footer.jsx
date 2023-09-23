@@ -47,7 +47,7 @@ export default function Footer() {
                 href="#"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
-                WatchRepair
+                Watch-Repair
               </a>
               <a
                 href="/ContactUs"
