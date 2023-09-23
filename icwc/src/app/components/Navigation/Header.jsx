@@ -33,7 +33,7 @@ export default function Header() {
       >
         <a
           href="/WatchRepair"
-          className="flex items-center text-black font-extrabold text-xl"
+          className="flex items-center text-black font-extrabold text-xl font-['Roboto']"
         >
           WatchRepair
         </a>
@@ -95,7 +95,7 @@ export default function Header() {
                 variant="gradient"
                 size="sm"
                 href="/ContactUs"
-                className="hidden lg:inline-block bg-gray-800 px-6 py-1 rounded-sm"
+                className="hidden lg:inline-block bg-gray-800 px-6 py-1 rounded-sm font-['Roboto']"
               >
                 CONTACT US
               </Button>
