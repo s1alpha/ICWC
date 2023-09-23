@@ -73,7 +73,7 @@ export default function WatchRepair() {
               />
             </>
           ) : (
-            <div className="relative h-full w-full flex flex-col lg:aspect-video justify-start lg:justify-center items-start opacity-30 lg:opacity-100">
+            <div className="relative h-full w-full flex lg:aspect-video justify-center items-center opacity-30 lg:opacity-100">
               {hasWindow &&
                 (window.innerWidth > window.innerHeight ? (
                   <ReactPlayer
@@ -108,8 +108,7 @@ export default function WatchRepair() {
                     // className="h-full"
                     style={{
                       position: "absolute",
-                      top: 0,
-                      left: "-60%",
+                      top: "15%",
                       objectPosition: "center",
                       objectFit: "cover",
                     }}
