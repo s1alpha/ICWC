@@ -12,9 +12,9 @@ import Transformations from './components/Home/Transformations';
 export default function Page() {
   return (
     <>
-    <Header/>
+    <Header className=""/>
     <main className="relative flex min-h-screen flex-col items-center justify-between">
-    
+
     <MainHero/>
     <Services/>
     <Transformations/>

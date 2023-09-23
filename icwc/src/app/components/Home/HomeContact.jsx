@@ -11,7 +11,7 @@ export default function HomeContact() {
 
   return (
     <>
-      <div className="w-full max-w-[1600px] overflow-hidden h-full px-16 my-[5%] py-28 bg-white flex-col justify-start items-start gap-20 inline-flex">
+      <div className="w-full max-w-[1600px] overflow-hidden h-full px-6 lg:px-16 my-[5%] py-28 bg-white flex-col justify-start items-start gap-20 inline-flex">
         <div className="h-full flex-col justify-start items-start gap-0 flex lg:mb-12">
           <div className="text-center font-bold font-['Roboto'] text-gray-600 text-xl font-['Roboto'] leading-normal">
             NEED HELP?
@@ -29,11 +29,11 @@ export default function HomeContact() {
         <div className="self-stretch flex flex-col lg:flex-row justify-center items-center gap-20 inline-flex">
           <div className="h-full w-full lg:pl-10 lg:w-[500px] flex flex-col justify-center items-center lg:gap-2 gap-8 lg:pr-[300px]">
             {/* <button>Reach out</button> */}
-            <div className="w-full self-stretch h-full ">
+            <div className="w-full self-stretch h-full">
               <div className="w-8 h-8 px-[2.67px] py-[5.33px] justify-center items-center inline-flex" />
 
-              <div className="bg-[#182835] w-full px-4 pt-12 lg:py-2 self-stretch h-full flex flex-col min-w-[500px] justify-start items-center gap-2 flex">
-                <div className="self-stretch text-white text-4xl lg:text-3xl font-bold font-['Roboto'] leading-7 flex flex-row justify-between ">
+              <div className="bg-[#182835] w-full px-4 lg:pt-12 py-4 lg:py-2 self-stretch h-full flex flex-col lg:min-w-[500px] justify-start items-center gap-2 flex">
+                <div className="self-stretch text-white text-2xl lg:text-3xl font-bold font-['Roboto'] leading-7 flex flex-row justify-between ">
                   EMAIL{" "}
                   {isOpenEmail ? (
                     <button onClick={() => setIsOpenEmail(!isOpenEmail)}>
@@ -60,8 +60,8 @@ export default function HomeContact() {
               <div className="w-full self-stretch h-full ">
                 <div className="w-8 h-8 px-[2.67px] py-[5.33px] justify-center items-center inline-flex" />
 
-                <div className="bg-[#182835] w-full px-4 pt-12 lg:py-2  self-stretch h-full flex flex-col min-w-[500px] justify-start items-center gap-2 flex">
-                  <div className="self-stretch text-white text-4xl lg:text-3xl font-bold font-['Roboto'] leading-7 flex flex-row justify-between ">
+                <div className="bg-[#182835] w-full px-4 lg:pt-12 py-4 lg:py-2  self-stretch h-full flex flex-col lg:min-w-[500px] justify-start items-center gap-2 flex">
+                  <div className="self-stretch text-white text-2xl lg:text-3xl font-bold font-['Roboto'] leading-7 flex flex-row justify-between ">
                     PHONE{" "}
                     {isOpenPhone ? (
                       <button onClick={() => setIsOpenPhone(!isOpenPhone)}>
@@ -89,8 +89,8 @@ export default function HomeContact() {
             <div className="w-full self-stretch h-full ">
               <div className="w-8 h-8 px-[2.67px] py-[5.33px] justify-center items-center inline-flex" />
 
-              <div className="bg-[#182835] w-full px-4 pt-12 lg:py-2 self-stretch h-full flex flex-col min-w-[500px] justify-start items-center gap-2 flex">
-                <div className="self-stretch text-white text-4xl lg:text-3xl font-bold font-['Roboto'] leading-7 flex flex-row justify-between ">
+              <div className="bg-[#182835] w-full px-4 lg:pt-12 py-4 lg:py-2 self-stretch h-full flex flex-col lg:min-w-[500px] justify-start items-center gap-2 flex">
+                <div className="self-stretch text-white text-2xl lg:text-3xl font-bold font-['Roboto'] leading-7 flex flex-row justify-between ">
                   OFFICE{" "}
                   {isOpenOffice ? (
                     <button onClick={() => setIsOpenOffice(!isOpenOffice)}>
