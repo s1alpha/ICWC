@@ -8,6 +8,7 @@ import {
   Button,
   IconButton,
   Card,
+  Collapse,
 } from "@material-tailwind/react";
 import Image from "next/image";
 import LogoTextAqua from "../../../../public/LogoImages/Logo ICWC_Aqua_Text.png";
@@ -28,10 +29,13 @@ export default function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal pt-12 lg:pt-0"
       >
-        <a href="/WatchRepair" className="flex items-center">
-          Watch-Repair
+        <a
+          href="/WatchRepair"
+          className="flex items-center text-black font-extrabold text-xl"
+        >
+          WatchRepair
         </a>
       </Typography>
       {/* <Typography
@@ -135,11 +139,11 @@ export default function Header() {
             </IconButton>
           </div>
         </div>
-        <MobileNav
+        <Collapse
           open={openNav}
           className="flex flex-col justify-center items-center h-full "
         >
-          <div className="h-full">{navList}</div>
+          {navList}
 
           <Button
             variant="gradient"
@@ -150,7 +154,7 @@ export default function Header() {
           >
             <span>Contact Us</span>
           </Button>
-        </MobileNav>
+        </Collapse>
       </Navbar>
     </>
   );
