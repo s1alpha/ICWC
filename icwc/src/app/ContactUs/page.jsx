@@ -21,8 +21,8 @@ export default function ContactUs() {
     <>
       <Header />
       <div className="w-full h-full px-16 py-28 bg-white flex-col justify-start items-start gap-20 inline-flex my-[5%]">
-        <div className="self-stretch flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-start gap-20 inline-flex">
-          <div className="grow shrink basis-0 flex-col justify-start items-start inline-flex">
+        <div className="self-stretch flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-20 inline-flex">
+          <div className=" grow shrink basis-0 flex-col justify-start items-start inline-flex">
             <div className="self-stretch h-[149px] flex-col justify-start items-start gap-0 flex">
               <div className="text-center font-bold font-['Roboto'] text-gray-600 text-xl font-['Roboto'] ">
                 NEED HELP?
@@ -38,11 +38,11 @@ export default function ContactUs() {
             </div>
             <Form />
           </div>
-          <div className="relative min-h-[600px] overflow-hidden h-full lg:max-w-[50vw]">
+          <div className="relative lg:h-[600px] overflow-hidden h-full lg:max-w-[50vw]">
             <Image
               src={FixingWatch}
               alt="Fixing a watch"
-              className="object-fit"
+              className="object-cover h-full"
             />
 
             <div className="absolute top-0 left-0  w-full h-full flex justify-center items-center z-[8]">
