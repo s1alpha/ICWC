@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import ContactImage from "../../../../public/Images/WatchesRow.jpg";
+import ContactImage from "../../../../public/Images/ContactUs.webp";
 
 export default function HomeContact() {
   const initOpen = true;
