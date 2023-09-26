@@ -7,7 +7,7 @@ import Cert from "../../../../public/Icons/Certificate.svg";
 export default function Services() {
   return (
     <>
-      <div className="w-full bg-white  h-full px-16 py-28 flex-col justify-start items-start gap-20 inline-flex">
+      <div className="w-full bg-white  h-full lg:h-[400px] px-16 py-28 flex-col justify-start items-start gap-20 inline-flex">
         <div className="self-stretch flex flex-col lg:flex-row justify-center items-start gap-24 inline-flex">
           <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
             <div className="self-stretch h-full flex-col justify-start items-start gap-6 flex">

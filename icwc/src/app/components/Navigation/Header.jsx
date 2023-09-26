@@ -11,7 +11,8 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import Image from "next/image";
-import LogoTextAqua from "../../../../public/LogoImages/Logo ICWC_Aqua_Text.png";
+// import LogoTextAqua from "../../../../public/LogoImages/Logo ICWC_Aqua_Text.png";
+import LogoTextAqua from "../../../../public/LogoImages/Logo ICWC_Aqua.png";
 
 export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -33,7 +34,7 @@ export default function Header() {
       >
         <a
           href="/WatchRepair"
-          className="flex items-center text-black font-extrabold text-xl font-['Roboto']"
+          className="flex items-center text-black text-[24px] lg:text-[18px] font-['Roboto']"
         >
           WatchRepair
         </a>
@@ -68,7 +69,8 @@ export default function Header() {
           <a href="/" className="hidden lg:flex">
             <Image
               src={LogoTextAqua}
-              className="h-4 w-auto flex flex-col justify-center items-center object-cover"
+              className="h-10 w-auto flex flex-col justify-center items-center object-cover"
+              alt="IronCityWatchCompany logo"
             />{" "}
           </a>
           <a
@@ -77,7 +79,8 @@ export default function Header() {
           >
             <Image
               src={LogoTextAqua}
-              className="h-3 w-auto  flex flex-col justify-center items-center object-cover"
+              className="h-8 w-auto  flex flex-col justify-center items-center object-cover"
+              alt="IronCityWatchCompany logo"
             />{" "}
           </a>
 
@@ -97,7 +100,7 @@ export default function Header() {
                 href="/ContactUs"
                 className="hidden lg:inline-block bg-gray-800 px-6 py-1 rounded-sm font-['Roboto']"
               >
-                CONTACT US
+                Contact Us
               </Button>
             </a>
             <IconButton

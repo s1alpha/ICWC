@@ -29,10 +29,10 @@ export default function MainHero() {
             <Image src={PearlIcon} className="h-24 w-24 mb-12 lg:mb-4 " />
             <Image src={PearlText} className=" w-[300px] lg:w-[400px] " />
           </div> */}
-          <h1 className="text-center lg:text-left max-w-[700px] text-[48px] font-bold leading-[50px] mb-8 ">
+          <h1 className="text-center lg:text-left max-w-[700px] text-[48px] font-bold leading-[50px] mb-8 font-['Roboto'] ">
             Luxury Rolex Servicing and Restoration
           </h1>
-          <h1 className="text-center lg:text-left max-w-[700px]">
+          <h1 className="text-center lg:text-left max-w-[700px] font-['Roboto']">
             Experience the finest care for your Rolex timepiece. Restore your
             movement to factory Swiss standards
           </h1>
@@ -41,7 +41,7 @@ export default function MainHero() {
             <a href="/ContactUs">
               <Button
                 variant="gradient"
-                className="rounded-sm px-2 py-2 min-w-[200px] border-2 border-[#182835] bg-[#182835] text font-normal text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
+                className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] border-2 border-[#182835] bg-[#182835] text font-normal text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
               >
                 Contact Us
               </Button>
@@ -49,7 +49,7 @@ export default function MainHero() {
             <a href="/WatchRepair">
               <Button
                 variant="gradient"
-                className="rounded-sm px-2 py-2 min-w-[200px] text font-thin text-white border-2 border-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
+                className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] text font-thin text-white border-2 border-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
               >
                 Learn More
               </Button>

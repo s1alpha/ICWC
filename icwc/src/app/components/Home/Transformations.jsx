@@ -14,7 +14,7 @@ import WatchBanner from "../../../../public/Images/WatchBanner_Medium.webp";
 export default function Transformations() {
   return (
     <>
-      <section className="overflow-hidden relative py-[10%] px-[5%] w-full h-[80vh] lg:h-[420px] flex flex-col gap-20 justify-center lg:justify-center items-center">
+      <section className="overflow-hidden relative py-[10%] px-[5%] w-full h-[80vh] lg:h-[400px] flex flex-col gap-20 justify-center lg:justify-center items-center">
         <div className="absolute top-0 left-0 bg-black opacity-40 h-full w-full z-[4]"></div>
         <div className="absolute top-0 left-0 bg-black opacity-100 z-[2] w-full">
           {/* <div className="flex lg:hidden">
