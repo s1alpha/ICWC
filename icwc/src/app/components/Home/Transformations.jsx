@@ -14,7 +14,7 @@ import WatchesRow from "../../../../public/Images/WatchesRow.jpg";
 export default function Transformations() {
   return (
     <>
-      <section className="overflow-hidden relative py-[5%] px-[5%] my-[5%] w-full h-[80vh] lg:h-[50vh] flex flex-col gap-20 justify-center lg:justify-center items-center">
+      <section className="overflow-hidden relative py-[5%] px-[5%] w-full h-[80vh] lg:h-[50vh] flex flex-col gap-20 justify-center lg:justify-center items-center">
         <div className="absolute top-0 left-0 bg-black opacity-60 h-full w-full z-[4]"></div>
         <div className="absolute top-0 left-0 bg-black opacity-100 z-[2] w-full">
           {/* <div className="flex lg:hidden">

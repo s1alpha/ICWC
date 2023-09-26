@@ -45,7 +45,7 @@ export default function WatchRepair() {
   return (
     <>
       <Header />
-      <div className="overflow-hidden relative w-full h-[60vh] lg:h-[50vh] px-8 lg:px-16 py-4 lg:py-28 bg-none flex-col justify-start items-start gap-20 inline-flex lg:my-[10%]">
+      <div className="overflow-hidden relative w-full h-[60vh] lg:h-[50vh] px-8 lg:px-16 py-4 lg:py-28 bg-none flex-col justify-start items-start gap-20 inline-flex ">
         <div className="absolute top-0 left-0 h-full w-full flex justify-center items-center z-[3]">
           <div className="h-full aspect-video flex flex-col justify-center items-center">
             <h1 className="text-[#182835] lg:text-white font-['Roboto] text-3xl lg:text-6xl font-extrabold mb-2">

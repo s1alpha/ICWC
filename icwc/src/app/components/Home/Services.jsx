@@ -75,7 +75,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      {/* <section className="py-[5%] my-[10%] px-[5%] w-[100vw] h-full flex flex-col gap-20 justify-start lg:justify-center items-center">
+      {/* <section className="py-[5%]  px-[5%] w-[100vw] h-full flex flex-col gap-20 justify-start lg:justify-center items-center">
     <div className="w-full flex flex-col justify-center items-center">
       <h2 className="font-extrabold text-[24px]">Export COA and Watch Restoration</h2>
       <h6>subtitle</h6>
