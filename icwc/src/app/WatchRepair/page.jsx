@@ -66,12 +66,15 @@ export function TopSectionHero() {
           before and after transformations.
         </h3>
       </div>
-      <div className="order-first lg:order-last w-full h-[200px] flex justify-center items-center lg:h-full bg-orange-200 overflow-hidden">
+      <div className="relative order-first lg:order-last w-full h-[100px] flex justify-center items-center lg:h-full bg-orange-200 overflow-hidden">
         <Image
           src={StopWatch}
           className="aspect-square object-cover"
           alt="IronCityWatchCompany Stopwatch"
         />
+        <div className="lg:hidden absolute top-o left-0 w-full h-full bg-none flex flex-row justify-center items-center ">
+          <Image src={PearlIcon} alt="Pearl Icon ICWC" className=" w-16 w-16" />
+        </div>
       </div>
     </div>
   );
