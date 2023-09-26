@@ -96,19 +96,21 @@ export function Form() {
         />
 
         {/* <p className="mb-2 text-gray-600 font-bold">Interest:</p> */}
-        <select
-          name="type"
-          {...register("type", {
-            required: true,
-          })}
-          placeholder="Select"
-          className="max-w-[400px] p-2 shadow-inner border-2 mb-12"
-        >
-          <option value="repair">Watch Repair Estimate</option>
-          <option value="sourcing">TimePiece Sourcing</option>
-          <option value="assesment">General Assesment</option>
-          <option value="other">Other</option>
-        </select>
+        <div className="max-w-[400px] p-2 shadow-inner border-2 mb-12">
+          <select
+            name="type"
+            {...register("type", {
+              required: true,
+            })}
+            placeholder="Select"
+            className=""
+          >
+            <option value="repair">Watch Repair Estimate</option>
+            <option value="sourcing">TimePiece Sourcing</option>
+            <option value="assesment">General Assesment</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
         {errors?.type?.type === "required" && <p>This field is required</p>}
 
         <textarea

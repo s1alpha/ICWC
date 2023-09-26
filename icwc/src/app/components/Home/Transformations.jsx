@@ -9,13 +9,13 @@ import {
 
 import Image from "next/image";
 import StopWatch from "../../../../public/Images/StopWatch.png";
-import WatchesRow from "../../../../public/Images/WatchesRow.jpg";
+import WatchBanner from "../../../../public/Images/WatchBanner_Medium.webp";
 
 export default function Transformations() {
   return (
     <>
-      <section className="overflow-hidden relative py-[5%] px-[5%] w-full h-[80vh] lg:h-[50vh] flex flex-col gap-20 justify-center lg:justify-center items-center">
-        <div className="absolute top-0 left-0 bg-black opacity-60 h-full w-full z-[4]"></div>
+      <section className="overflow-hidden relative py-[10%] px-[5%] w-full h-[80vh] lg:h-[420px] flex flex-col gap-20 justify-center lg:justify-center items-center">
+        <div className="absolute top-0 left-0 bg-black opacity-40 h-full w-full z-[4]"></div>
         <div className="absolute top-0 left-0 bg-black opacity-100 z-[2] w-full">
           {/* <div className="flex lg:hidden">
             {" "}
@@ -31,14 +31,11 @@ export default function Transformations() {
               className="object-cover h-[80vh] lg:h-[50vh] w-full"
             />
           </div> */}
-          <Image
-            src={StopWatch}
-            className="object-cover h-[80vh] lg:h-[50vh] w-full"
-          />
+          <Image src={WatchBanner} className="object-cover h-full w-full " />
         </div>
 
-        <div className="flex flex-col justify-center items-center mb-8 z-[10]">
-          <h1 className="font-extrabold text-[2.5rem] font-['Roboto'] lg:text-[64px] text-center md:text-left text-white">
+        <div className="flex flex-col justify-center items-center z-[10]">
+          <h1 className="font-extrabold text-[48px] font-['Roboto'] lg:text-[64px] text-center md:text-left text-white">
             Transformations
           </h1>
           <h5 className="text-[16px] lg:text-[18px] text-gray-800 text-center md:text-left font-['Roboto'] text-white">
@@ -46,13 +43,21 @@ export default function Transformations() {
             and restoration
           </h5>
         </div>
-        <div className="w-full flex justify-center  items-center z-[6]">
+        <div className="w-full flex justify-center items-center gap-4 z-[10]">
+          <a href="/ContactUs">
+            <Button
+              variant="gradient"
+              className="rounded-sm px-2 py-2 min-w-[140px] border-2 border-[#182835] bg-[#182835] text font-normal text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
+            >
+              View
+            </Button>
+          </a>
           <a href="/WatchRepair">
             <Button
-              variant="gradiant"
-              className=" px-2 py-1 min-w-[200px] bg-white  text-xl text-gray-800 font-['Roboto'] "
+              variant="gradient"
+              className="rounded-sm px-2 py-2 min-w-[200px] text font-thin text-white border-2 border-gray-200 shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
             >
-              See How
+              Learn More
             </Button>
           </a>
         </div>

@@ -10,8 +10,8 @@ import {
 export default function Sourcing() {
   return (
     <>
-      <div className="w-full h-full max-w-[1600px] bg-[#182835] px-8 lg:px-16 py-20 lg:py-[5%] flex-col justify-center items-start gap-20 inline-flex">
-        <div className="self-stretch flex flex-col h-full lg:flex-row justify-start lg:items-start gap-6 lg:gap-20 inline-flex">
+      <div className="w-full h-full max-w-[1600px] bg-[#182835] px-8 lg:px-16 py-20 lg:py-[20%] flex-col justify-center items-start gap-20 inline-flex">
+        <div className="self-stretch flex flex-col h-full lg:flex-row justify-start items-center gap-6 lg:gap-20 inline-flex">
           <div className="grow shrink basis-0  lg:text-left text-center">
             <span className="text-neutral-400 text-[2.5rem] lg:text-2xl font-bold font-['Roboto'] leading-[28.80px]">
               TIMEPIECE SOURCING
@@ -28,7 +28,7 @@ export default function Sourcing() {
               find it. Our team will look far and wide for that specific
               timepiece.
             </div>
-            <div className="w-full pt-4 justify-center lg:justify-left items-start gap-4 inline-flex">
+            <div className="w-full pt-4 flex flex-col lg:flex-row justify-center lg:justify-start items-start gap-4 inline-flex">
               <a href="/ContactUs">
                 <Button
                   variant="gradiant"
