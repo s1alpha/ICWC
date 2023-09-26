@@ -4,6 +4,8 @@ import Footer from "../components/Navigation/Footer";
 import Header from "../components/Navigation/Header";
 import FixingWatch from "../../../public/Images/FixingWatchFar.png";
 import PearlIcon from "../../../public/LogoImages/Pearl_Icon.png";
+import StopWatch from "../../../public/Images/StopWatch.png";
+
 import Image from "next/image";
 
 import { useForm } from "react-hook-form";
@@ -45,16 +47,36 @@ export default function WatchRepair() {
   return (
     <>
       <Header />
-      <div className="overflow-hidden relative w-full h-[60vh] lg:h-[50vh] px-8 lg:px-16 py-4 lg:py-28 bg-white flex-col justify-start items-start gap-20 inline-flex ">
-        <h1>Hello</h1>
-        <div className="w-full h-full bg-red-200"></div>
-      </div>
+      <TopSectionHero />
       <Footer />
     </>
   );
 }
 
 export function TopSectionHero() {
+  return (
+    <div className="w-full py-[5%] bg-white gap-4 flex flex-col lg:flex-row justify-center items-center px-[5%]">
+      <div className="h-full p-4">
+        <h1 className="text-[48px] font-bold text-[#182835] leading-[60px] mb-4">
+          Transforming Timepieces with Expert Restoration
+        </h1>
+        <h3 className="text-[16px] font-medium text-gray-800">
+          Experience the magic of watch restoration and witness the stunning
+          before and after transformations.
+        </h3>
+      </div>
+      <div className="w-full h-full bg-orange-200">
+        <Image
+          src={StopWatch}
+          className="aspect-square object-cover"
+          alt="IronCityWatchCompany Stopwatch"
+        />
+      </div>
+    </div>
+  );
+}
+
+export function PreviousTopSectionVideo() {
   return (
     <>
       <div className="absolute top-0 left-0 h-full w-full flex justify-center items-center z-[3]">
