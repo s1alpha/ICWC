@@ -19,7 +19,7 @@ export default function HomeContact() {
           </div>
         </div>
 
-        <div className="self-stretch flex flex-col lg:flex-row justify-center items-center gap-20 inline-flex">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-20">
           <div className="w-full lg:max-w-[400px] h-full flex flex-col justify-center items-center lg:items-left">
             <DetailCard
               title="Email"
