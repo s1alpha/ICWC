@@ -48,6 +48,7 @@ export default function WatchRepair() {
     <>
       <Header />
       <TopSectionHero />
+      <BottomSectionVideo />
       <Footer />
     </>
   );
@@ -65,12 +66,60 @@ export function TopSectionHero() {
           before and after transformations.
         </h3>
       </div>
-      <div className="w-full h-full bg-orange-200">
+      <div className="order-first lg:order-last w-full h-[200px] flex justify-center items-center lg:h-full bg-orange-200 overflow-hidden">
         <Image
           src={StopWatch}
           className="aspect-square object-cover"
           alt="IronCityWatchCompany Stopwatch"
         />
+      </div>
+    </div>
+  );
+}
+
+export function BottomSectionVideo() {
+  return (
+    <div className="w-full py-[5%] bg-white gap-4 flex flex-col justify-center items-center px-[5%]">
+      <div className="w-full flex justify-center items-center aspect-video bg-red-200">
+        <ReactPlayer
+          url="https://vimeo.com/866586842/662b3dcb3c"
+          playing={true}
+          loop={true}
+          controls={false}
+          muted={true}
+          onPlay={() => setIsPlaying(true)}
+          playsinline={true}
+          width={"100%"}
+          height={"100%"}
+          className="w-full h-full"
+          // style={{
+          //   position: "absolute",
+          //   top: "40px",
+          //   left: 0,
+          //   objectPosition: "center",
+          // }}
+        />
+      </div>
+
+      <div className="h-full w-full flex flex-col lg:flex-row gap-0 ">
+        <div className="w-full flex flex-col gap-0 justif-start ">
+          <p className="text-gray-600 font-['Roboto'] -mb-4">2023</p>
+          <h1 className="text-[32px] font-bold text-[#182835] leading-[60px] mb-1">
+            Transformations
+          </h1>
+          <h3 className="text-[14px] text-gray-800">
+            Restorations done with class by expert handelers
+          </h3>
+        </div>
+        <div className="w-full w-max-[700px] py-12">
+          <h2 className="text-gray-600">
+            A well-executed watch restoration breathes new life into vintage
+            timepieces, restoring their beauty and functionality, while a COA
+            ensures their continued accuracy. In this captivating video, we
+            delve into the mesmerizing world of watch restoration and COAs - a
+            journey that bridges the past with the present.
+          </h2>
+        </div>
       </div>
     </div>
   );

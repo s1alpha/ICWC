@@ -43,7 +43,7 @@ export default function Transformations() {
             and restoration
           </h5>
         </div>
-        <div className="w-full flex justify-center items-center gap-4 z-[10]">
+        <div className="w-full flex justify-center items-center gap-4">
           <a href="/ContactUs">
             <Button
               variant="gradient"
