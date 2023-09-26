@@ -37,7 +37,7 @@ export default function MainHero() {
             movement to factory Swiss standards
           </h1>
 
-          <div className="w-full flex justify-center md:justify-start items-center gap-4 mt-20 lg:mt-10">
+          <div className="w-full flex flex-col lg:flex-row justify-center md:justify-start items-center gap-4 mt-20 lg:mt-10">
             <a href="/ContactUs">
               <Button
                 variant="gradient"
