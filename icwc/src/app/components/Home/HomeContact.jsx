@@ -5,8 +5,8 @@ import ContactImage from "../../../../public/Images/ContactUs.webp";
 export default function HomeContact() {
   return (
     <>
-      <div className="w-full max-w-[1600px] overflow-hidden h-full px-6 lg:px-16 py-28 bg-white flex-col justify-start items-start gap-20 inline-flex">
-        <div className="self-stretch h-full flex-col justify-start items-start gap-6 flex">
+      <div className="w-full overflow-hidden h-full px-6 lg:px-16 py-28 bg-white flex-col justify-start items-start gap-20">
+        <div className="self-stretch h-full flex-col justify-start items-start gap-6 flex lg:mb-[5%]">
           <div className="text-center lg:text-left font-bold font-['Roboto'] text-gray-600 text-xl font-['Roboto'] w-full leading-normal">
             NEED HELP?
           </div>

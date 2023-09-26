@@ -10,7 +10,7 @@ import {
 export default function Sourcing() {
   return (
     <>
-      <div className="w-full h-full lg:h-[400px] max-w-[1600px] bg-[#182835] px-8 lg:px-16 py-20 lg:py-[20%] flex-col justify-center items-start gap-20 inline-flex">
+      <div className="w-full h-full lg:h-[400px] bg-[#182835] px-8 lg:px-16 py-20 lg:py-[10%] flex-col justify-center items-start gap-20 inline-flex">
         <div className="self-stretch flex flex-col h-full lg:flex-row justify-start items-center gap-6 lg:gap-20 inline-flex">
           <div className="grow shrink basis-0  lg:text-left text-center">
             <span className="text-neutral-400 text-[2.5rem] lg:text-2xl font-bold font-['Roboto'] leading-[28.80px]">
