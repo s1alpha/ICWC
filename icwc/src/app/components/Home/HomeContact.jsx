@@ -10,17 +10,17 @@ export default function HomeContact() {
           <div className="text-center lg:text-left font-bold font-['Roboto'] text-gray-600 text-xl font-['Roboto'] w-full leading-normal">
             NEED HELP?
           </div>
-          <div className="self-stretch text-gray-800 text-5xl font-bold font-['Roboto'] leading-[57.60px]">
+          <div className="self-stretch text-center lg:text-left text-gray-800 text-5xl font-bold font-['Roboto'] leading-[57.60px]">
             Contact our team
           </div>
-          <div className="self-stretch text-gray-800 text-lg text-xl font-normal font-['Roboto'] leading-[27px]">
+          <div className="self-stretch text-center lg:text-left text-gray-800 text-lg text-xl font-normal font-['Roboto'] leading-[27px]">
             Reach out to us today and our team will make sure to get back to you
             as soon as we can
           </div>
         </div>
 
         <div className="self-stretch flex flex-col lg:flex-row justify-center items-center gap-20 inline-flex">
-          <div className="w-full min-w-[400px] h-full flex flex-col justify-center items-center lg:items-left">
+          <div className="w-full lg:max-w-[400px] h-full flex flex-col justify-center items-center lg:items-left">
             <DetailCard
               title="Email"
               text="Send us a message today"
@@ -50,13 +50,13 @@ export default function HomeContact() {
 
 export function DetailCard({ text, value, title, icon }) {
   return (
-    <div className="w-full self-stretch h-full m-4">
-      <div className="w-full bg-green-200">{icon}</div>
-      <h1 className="w-full text-[24px] text-[#182835]">{title}</h1>
-      <div className="text-[#182835] mt-2 self-stretch text-gray-800 text-base font-normal font-['Roboto'] leading-normal whitespace-nowrap">
+    <div className="w-full self-stretch h-full m-4 flex flex-col justify-center items-center">
+      <div className="bg-green-200">{icon}</div>
+      <h1 className="text-[24px] text-[#182835]">{title}</h1>
+      <div className="text-[#182835] mt-2  text-gray-800 text-base font-normal font-['Roboto'] leading-normal whitespace-nowrap">
         {text}
       </div>
-      <div className="text-[#182835] self-stretch pb-8 text-gray-800 text-base font-normal font-['Roboto'] underline leading-normal">
+      <div className="text-[#182835] pb-8 text-gray-800 text-base font-normal font-['Roboto'] underline leading-normal">
         {value}
       </div>
     </div>
