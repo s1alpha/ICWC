@@ -29,10 +29,10 @@ export default function MainHero() {
             <Image src={PearlIcon} className="h-24 w-24 mb-12 lg:mb-4 " />
             <Image src={PearlText} className=" w-[300px] lg:w-[400px] " />
           </div> */}
-          <h1 className="text-center lg:text-left max-w-[700px] text-[48px] font-bold leading-[50px] mb-8 font-['Roboto'] ">
+          <h1 className="text-white text-center lg:text-left max-w-[700px] text-[48px] font-bold leading-[50px] mb-8 font-['Roboto'] ">
             Luxury Rolex Servicing and Restoration
           </h1>
-          <h1 className="text-center lg:text-left max-w-[700px] font-['Roboto']">
+          <h1 className="text-white text-center lg:text-left max-w-[700px] font-['Roboto']">
             Experience the finest care for your Rolex timepiece. Restore your
             movement to factory Swiss standards
           </h1>
