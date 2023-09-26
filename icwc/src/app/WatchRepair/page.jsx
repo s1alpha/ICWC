@@ -80,7 +80,7 @@ export function TopSectionHero() {
 export function BottomSectionVideo() {
   return (
     <div className="w-full py-[5%] bg-white gap-4 flex flex-col justify-center items-center px-[5%]">
-      <div className="w-full flex justify-center items-center aspect-video bg-red-200">
+      <div className="w-full flex justify-center items-center aspect-video bg-[url('https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png')] bg-cover">
         <ReactPlayer
           url="https://vimeo.com/866586842/662b3dcb3c"
           playing={true}
