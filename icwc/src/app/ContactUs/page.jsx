@@ -20,7 +20,7 @@ export default function ContactUs() {
   return (
     <>
       <Header />
-      <div className="w-full h-full px-8 lg:px-16 py-4 lg:py-14 bg-white flex-col justify-start items-start gap-20 inline-flex my-[5%] lg:mt-[0%]">
+      <div className="w-full h-full px-8 lg:px-16 py-4 lg:py-14 bg-white flex-col justify-start items-start gap-20 inline-flex  lg:mt-[0%]">
         <div className="relative self-stretch flex flex-col lg:flex-row justify-center lg:justify-start lg:items-end gap-20 inline-flex">
           <div className="relative grow shrink basis-0 flex-col justify-start items-start inline-flex">
             <div className="self-stretch h-[149px] flex-col justify-start items-center lg:items-start gap-0 flex ">

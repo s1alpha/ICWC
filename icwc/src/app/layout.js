@@ -13,6 +13,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
 <title>IronCityWatchCompany</title>
+
+<meta name="og:image" content="https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png"/>
+<meta name="og:title" content="IronCityWatchCo. | Restorations | Repairs | Sourcing"/>
+<meta name="og:url" content="icwc.vercel.app"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 </head>
