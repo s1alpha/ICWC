@@ -50,7 +50,7 @@ export default function HomeContact() {
 
 export function DetailCard({ text, value, title, icon }) {
   return (
-    <div className="w-full self-stretch h-full m-4 flex flex-col justify-center items-center">
+    <div className="w-full h-full m-4 flex flex-col justify-center items-center">
       <div className="bg-green-200">{icon}</div>
       <h1 className="text-[24px] text-[#182835]">{title}</h1>
       <div className="text-[#182835] mt-2  text-gray-800 text-base font-normal font-['Roboto'] leading-normal whitespace-nowrap">

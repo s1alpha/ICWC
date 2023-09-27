@@ -27,7 +27,7 @@ export default function Services() {
             <div className="self-stretch h-full flex-col justify-start items-start gap-6 flex">
               {/* <Image src={Cert} className="h-14 w-14" alt="stars" /> */}
               <div className="self-stretch h-full flex-col justify-start items-start gap-1 flex">
-                <div className="self-stretch text-[#182835] text-[2.5rem] h-full lg:text-[32px] font-bold font-['Roboto'] leading-normal">
+                <div className="self-stretch text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
                   Restorations with Care
                 </div>
                 <div className="self-stretch max-w-[400px] text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
