@@ -56,7 +56,7 @@ export default function WatchRepair() {
 
 export function TopSectionHero() {
   return (
-    <div className="w-full py-[5%] bg-white gap-4 flex flex-col lg:flex-row justify-center items-center px-[5%]">
+    <div className="w-full py-[5%] bg-white overflow-hidden gap-4 flex flex-col lg:flex-row justify-center items-center px-[5%]">
       <div className="h-full p-4">
         <h1 className="text-[48px] font-bold text-[#182835] leading-[60px] mb-4">
           Transforming Timepieces with Expert Restoration
@@ -66,7 +66,7 @@ export function TopSectionHero() {
           before and after transformations.
         </h3>
       </div>
-      <div className="relative order-first lg:order-last w-full h-[100px] flex justify-center items-center lg:h-full bg-orange-200 overflow-hidden">
+      <div className="relative order-first lg:order-last w-full h-[100px] flex justify-center items-center lg:h-full overflow-hidden">
         <Image
           src={StopWatch}
           className="aspect-square object-cover"
@@ -82,7 +82,7 @@ export function TopSectionHero() {
 
 export function BottomSectionVideo() {
   return (
-    <div className="w-full py-[5%] bg-white gap-4 flex flex-col justify-center items-center px-[5%]">
+    <div className="w-full py-[5%] pb-[10%] bg-white gap-4 flex flex-col justify-center items-center px-[5%]">
       <div className="w-full flex justify-center items-center aspect-video bg-[url('https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png')] bg-cover">
         <ReactPlayer
           url="https://vimeo.com/866586842/662b3dcb3c"
@@ -118,9 +118,9 @@ export function BottomSectionVideo() {
           <h2 className="text-gray-600">
             A well-executed watch restoration breathes new life into vintage
             timepieces, restoring their beauty and functionality, while a COA
-            ensures their continued accuracy. In this captivating video, we
-            delve into the mesmerizing world of watch restoration and COAs - a
-            journey that bridges the past with the present.
+            ensures their continued accuracy. The mesmerizing world of watch
+            restoration awaits - a journey that bridges the past with the
+            present.
           </h2>
         </div>
       </div>
