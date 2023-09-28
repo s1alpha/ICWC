@@ -84,10 +84,10 @@ export function Service1() {
     >
       {" "}
       <div className="h-full flex flex-col justify-start items-start gap-1">
-        <h2 className="self-stretch text-left text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
+        <h2 className="self-stretch text-center  text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
           Expert COA{" "}
         </h2>
-        <p className="self-stretch max-w-[400px] text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
+        <p className="self-stretch max-w-[400px] text-center text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
           A clean, oil, and adjust performed by our team with careful attention
           to your specific timepiece.{" "}
         </p>
@@ -122,10 +122,10 @@ export function Service2() {
     >
       {" "}
       <div className="h-full flex flex-col justify-start items-start gap-1">
-        <h2 className="self-stretcht text-left text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[40px]">
+        <h2 className="w-full text-center text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[40px]">
           Restorations with Care
         </h2>
-        <p className="self-stretch max-w-[400px] text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
+        <p className="self-stretch max-w-[400px] text-center text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
           Our expert team will assess your watch and provide a detailed
           restoration plan to return it to its original glory.
         </p>
@@ -172,10 +172,10 @@ export function Service3() {
                     </span>
                   </div>
                 </div> */}
-        <h2 className="self-stretch text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[40px]">
+        <h2 className="w-full text-[#182835] text-center text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[40px]">
           Quality Assurance
         </h2>
-        <p className="self-stretch text-gray-800 text-[1.2rem] max-w-[400px] lg:text-base font-normal font-['Roboto'] leading-normal">
+        <p className="self-stretch text-center text-gray-800 text-[1.2rem] max-w-[400px] lg:text-base font-normal font-['Roboto'] leading-normal">
           Our team will test and ensure the quality of your movement for up to{" "}
           <div className="font-extrabold inline text-[#182835]">
             &nbsp;1&nbsp;
