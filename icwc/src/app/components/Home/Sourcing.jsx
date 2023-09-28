@@ -31,7 +31,7 @@ export default function Sourcing() {
             <div className="w-full pt-4 flex flex-row justify-center lg:justify-start items-start gap-4 inline-flex">
               <a href="/ContactUs">
                 <Button
-                  variant="gradientt"
+                  variant="gradient"
                   className="px-6 py-3 bg-white border border-gray-800 justify-center items-center gap-2 flex"
                 >
                   <p className="text-black text-xl font-['Roboto']">

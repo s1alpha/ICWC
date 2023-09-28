@@ -34,6 +34,7 @@ export default function Transformations() {
           <Image
             src={WatchBanner}
             className="h-[300px] w-full object-cover lg:h-full lg:w-full"
+            alt="A rolex watch being transformed, restored, and COA"
           />
         </div>
 

@@ -30,10 +30,12 @@ export default function Footer() {
               <Image
                 src={LogoAqua}
                 className="w-[100px] dark:hidden h-full object-cover"
+                alt="ICWC Aqua Logo"
               />
               <Image
                 src={LogoPearl}
                 className="w-[100px] dark:flex hidden h-full object-cover"
+                alt="ICWC Pearl Logo"
               />
             </div>
             <div className="flex flex-row justify-center items-center gap-8 inline-flex">

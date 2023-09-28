@@ -46,7 +46,11 @@ export default function ContactUs() {
             />
 
             <div className="absolute top-0 left-0  w-full h-full flex justify-center items-center z-[8]">
-              <Image src={PearlIcon} alt="ICWC Icon" className="h-12 w-12" />
+              <Image
+                src={PearlIcon}
+                alt="ICWC Pearl Icon"
+                className="h-12 w-12"
+              />
             </div>
           </div>
         </div>
