@@ -115,7 +115,7 @@ export default function MainHero() {
                   <a href="/ContactUs">
                     <Button
                       variant="gradient"
-                      className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] border-2 border-[#182835] bg-[#182835] text font-normal text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
+                      className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] border-2 border-[#182835] bg-[#182835] text font-normal text-white"
                     >
                       Contact Us
                     </Button>

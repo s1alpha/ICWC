@@ -12,9 +12,9 @@ import Cert from "../../../../public/Icons/Certificate.svg";
 export default function Services() {
   return (
     <>
-      <div className="w-full bg-white  h-full lg:h-[400px] px-16 py-28 flex-col justify-start items-start gap-20 inline-flex">
-        <div className="self-stretch flex flex-col lg:flex-row justify-center items-start gap-24 inline-flex">
-          <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+      <div className="w-full bg-white h-full lg:h-[400px] px-16 py-28 flex flex-col justify-center items-center gap-20">
+        <div className=" max-w-[1400px] flex flex-col lg:flex-row justify-center items-start gap-24 inline-flex">
+          <div className="h-full grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
             <div className="self-stretch h-full flex-col justify-start items-start gap-6 flex">
               {/* <Image src={Stars} alt="stars" /> */}
               <Service1 />
@@ -83,8 +83,8 @@ export function Service1() {
       className=""
     >
       {" "}
-      <div className="self-stretch h-[162px] flex-col justify-start items-start gap-1 flex">
-        <h2 className="self-stretch text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
+      <div className="h-full flex flex-col justify-start items-start gap-1">
+        <h2 className="self-stretch text-left text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
           Expert COA{" "}
         </h2>
         <p className="self-stretch max-w-[400px] text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
@@ -121,8 +121,8 @@ export function Service2() {
       className=""
     >
       {" "}
-      <div className="self-stretch h-full flex-col justify-start items-start gap-1 flex">
-        <h2 className="self-stretch text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
+      <div className="h-full flex flex-col justify-start items-start gap-1">
+        <h2 className="self-stretcht text-left text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[40px]">
           Restorations with Care
         </h2>
         <p className="self-stretch max-w-[400px] text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
@@ -159,7 +159,7 @@ export function Service3() {
       className=""
     >
       {" "}
-      <div className="self-stretch h-full flex-col justify-start items-start gap-1 flex">
+      <div className="h-full flex flex-col justify-start items-start gap-1">
         {/* <div className="h-12 justify-center items-center inline-flex lg:mb-6">
                   <div className="w-full h-12  py-[4.50px] justify-center items-center flex" />
                   <Image src={Badge} className="h-14 w-14" alt="stars" />
@@ -172,7 +172,7 @@ export function Service3() {
                     </span>
                   </div>
                 </div> */}
-        <h2 className="self-stretch text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-normal">
+        <h2 className="self-stretch text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[40px]">
           Quality Assurance
         </h2>
         <p className="self-stretch text-gray-800 text-[1.2rem] max-w-[400px] lg:text-base font-normal font-['Roboto'] leading-normal">
