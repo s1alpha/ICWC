@@ -64,7 +64,7 @@ export default function Header() {
 
   return (
     <>
-      <Navbar className="bg-white border-none sticky top-0 z-10 h-full w-full rounded-none py-4 pb-8 px-2 lg:px-8 lg:py-4">
+      <Navbar className="bg-white border-none sticky top-0 z-10 h-full w-full rounded-none py-4 pb-8 px-2 lg:px-24 lg:py-4">
         <div className="relative flex items-center justify-between text-blue-gray-900">
           <a href="/" className="hidden lg:flex">
             <Image

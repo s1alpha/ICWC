@@ -31,7 +31,7 @@ export default function MainHero() {
           </div>
         )}
         <div className="absolute top-0 aspect-video h-full bg-black opacity-0 z-[3]"></div>
-        <div className="hidden md:flex absolute top-0 aspect-video h-full bg-white z-[2]">
+        <div className="hidden md:flex absolute top-0 aspect-video h-full bg-white z-[2] lg:-mt-[40px]">
           {/* <Image src={Main} className="object-cover h-full w-full" /> */}
 
           <ReactPlayer

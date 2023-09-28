@@ -38,7 +38,7 @@ export default function Transformations() {
           />
         </div>
 
-        <div className="flex flex-col justify-center gap-0 items-center z-[10]">
+        <div className="flex flex-col justify-center gap-0 items-center z-[4]">
           <h1 className="font-extrabold text-[48px] font-['Roboto'] lg:text-[64px] text-center md:text-left text-white">
             Transformations
           </h1>
@@ -47,7 +47,7 @@ export default function Transformations() {
             and restoration
           </h5>
         </div>
-        <div className="w-full flex justify-center items-center gap-4 z-[10]">
+        <div className="w-full flex justify-center items-center gap-4 z-[4]">
           <a href="/ContactUs">
             <Button
               variant="gradient"
