@@ -112,7 +112,7 @@ export default function MainHero() {
                 transition={{ ease: "easeOut", duration: 2.5 }}
               >
                 <div className="w-full flex flex-col lg:flex-row justify-center md:justify-start items-center gap-4 mt-20 lg:mt-10">
-                  <a href="/ContactUs" aria-label="Contact button">
+                  <a href="/ContactUs" aria-label="Contact Us">
                     <Button
                       variant="gradient"
                       className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] border-2 border-[#182835] bg-[#182835] text font-normal text-white"
