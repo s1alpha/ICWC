@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, suspense } from "react";
 import Image from "next/image";
 import {
   Navbar,
@@ -12,8 +12,10 @@ import {
 import Main from "../../../../public/Images/Main.webp";
 import PearlIcon from "../../../../public/LogoImages/Pearl_Icon.png";
 import PearlText from "../../../../public/LogoImages/Pearl_Text.png";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import { motion } from "framer-motion";
+
+const ReactPlayer = lazy(() => import("react-player"));
 
 export default function MainHero() {
   const [isPlaying, setIsPlaying] = useState(false);
