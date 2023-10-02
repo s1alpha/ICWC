@@ -42,10 +42,10 @@ export default function Transformations() {
           <h1 className="font-extrabold text-[48px] font-['Roboto'] lg:text-[64px] text-center md:text-left text-white">
             Transformations
           </h1>
-          <h5 className="text-[16px] lg:text-[18px] max-w-[400px] lg:max-w-[700px] text-gray-800 text-center md:text-left font-['Roboto'] text-white">
+          <p className="text-[16px] lg:text-[18px] max-w-[400px] lg:max-w-[700px] text-gray-800 text-center md:text-left font-['Roboto'] text-white">
             See the incredible before and after results of our watch servicing
             and restoration
-          </h5>
+          </p>
         </div>
         <div className="w-full flex justify-center items-center gap-4 z-[4]">
           <a href="/WatchRepair">

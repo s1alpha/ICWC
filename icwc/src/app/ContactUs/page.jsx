@@ -49,7 +49,7 @@ export default function ContactUs() {
               <Image
                 src={PearlIcon}
                 alt="ICWC Pearl Icon"
-                className="h-12 w-12"
+                className="h-12 w-auto"
               />
             </div>
           </div>
