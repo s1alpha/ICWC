@@ -112,7 +112,7 @@ export default function MainHero() {
                 transition={{ ease: "easeOut", duration: 2.5 }}
               >
                 <div className="w-full flex flex-col lg:flex-row justify-center md:justify-start items-center gap-4 mt-20 lg:mt-10">
-                  <a href="/ContactUs" alt="button link">
+                  <a href="/ContactUs" aria-label="Contact button">
                     <Button
                       variant="gradient"
                       className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] border-2 border-[#182835] bg-[#182835] text font-normal text-white"
@@ -120,7 +120,7 @@ export default function MainHero() {
                       Contact Us
                     </Button>
                   </a>
-                  <a href="/WatchRepair">
+                  <a href="/WatchRepair" aria-label="WatchRepair button">
                     <Button
                       variant="gradient"
                       className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] text font-thin text-white border-2 border-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"

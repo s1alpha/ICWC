@@ -33,6 +33,7 @@ export default function Header() {
         className="p-1 font-normal pt-12 lg:pt-0"
       >
         <a
+          aria-label="WatchRepair"
           href="/WatchRepair"
           className="flex items-center text-black text-[24px] lg:text-[18px] font-['Roboto']"
         >
@@ -66,7 +67,7 @@ export default function Header() {
     <>
       <Navbar className="bg-white border-none sticky top-0 z-10 h-full w-full rounded-none py-4 pb-8 px-2 lg:px-24 lg:py-4">
         <div className="relative flex items-center justify-between text-blue-gray-900">
-          <a href="/" className="hidden lg:flex">
+          <a href="/" className="hidden lg:flex" aria-label="Logo link to home">
             <Image
               src={LogoTextAqua}
               className="h-10 w-auto flex flex-col justify-center items-center object-cover"
@@ -74,6 +75,7 @@ export default function Header() {
             />{" "}
           </a>
           <a
+            aria-label="Logo link to home"
             href="/"
             className="absolute top-0 left-0 w-full mt-4 flex justify-center items-center lg:hidden"
           >
@@ -93,7 +95,7 @@ export default function Header() {
           </Typography> */}
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block text-black ">{navList}</div>
-            <a href="/ContactUs">
+            <a href="/ContactUs" aria-label="ContactUs button">
               <Button
                 variant="gradient"
                 size="sm"

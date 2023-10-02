@@ -40,18 +40,21 @@ export default function Footer() {
             </div>
             <div className="flex flex-row justify-center items-center gap-8 inline-flex">
               <a
+                aria-label="home"
                 href="/"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
                 Home
               </a>
               <a
+                aria-label="WatchRepair"
                 href="/WatchRepair"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
                 WatchRepair
               </a>
               <a
+                aria-label="ContactUs"
                 href="/ContactUs"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
@@ -91,7 +94,7 @@ export default function Footer() {
             className="mb-4 text-center text-[12px] font-normal text-blue-gray-900 md:mb-0"
           >
             &copy; {currentYear}{" "}
-            <a className="text-[12px]" href="https://material-tailwind.com/">
+            <a className="text-[12px]" href="" aria-label="ICWC">
               IronCityWatchCompany
             </a>
             , LLC

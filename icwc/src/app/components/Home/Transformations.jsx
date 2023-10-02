@@ -48,7 +48,7 @@ export default function Transformations() {
           </p>
         </div>
         <div className="w-full flex justify-center items-center gap-4 z-[4]">
-          <a href="/WatchRepair">
+          <a href="/WatchRepair" aria-label="View WatchRepairs button">
             <Button
               variant="gradient"
               className="rounded-sm px-2 py-2 min-w-[140px] border-2 border-[#182835] bg-[#182835] text font-normal text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
@@ -56,7 +56,7 @@ export default function Transformations() {
               View
             </Button>
           </a>
-          <a href="/ContactUs">
+          <a href="/ContactUs" aria-label="ContactUs button">
             <Button
               variant="gradient"
               className="rounded-sm px-2 py-2 min-w-[200px] text font-medium text-white border-2 border-gray-200 shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
