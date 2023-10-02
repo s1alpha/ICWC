@@ -84,7 +84,7 @@ export function Service1() {
     >
       {" "}
       <div className="h-full flex flex-col justify-start items-start gap-1">
-        <h2 className="self-stretch text-center  text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
+        <h2 className="self-stretch text-center  text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[40px]">
           Expert Movement Service{" "}
         </h2>
         <p className="self-stretch max-w-[400px] text-center text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
