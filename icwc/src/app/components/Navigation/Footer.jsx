@@ -94,7 +94,11 @@ export default function Footer() {
             className="mb-4 text-center text-[12px] font-normal text-blue-gray-900 md:mb-0"
           >
             &copy; {currentYear}{" "}
-            <a className="text-[12px]" href="" aria-label="ICWC">
+            <a
+              className="text-[12px]"
+              href=""
+              aria-label="IronCityWatchCompany"
+            >
               IronCityWatchCompany
             </a>
             , LLC

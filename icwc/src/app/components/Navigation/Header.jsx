@@ -40,26 +40,6 @@ export default function Header() {
           WatchRepair
         </a>
       </Typography>
-      {/* <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Contact Us
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Docs
-        </a>
-      </Typography> */}
     </ul>
   );
 
@@ -95,7 +75,7 @@ export default function Header() {
           </Typography> */}
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block text-black ">{navList}</div>
-            <a href="/ContactUs" aria-label="ContactUs button">
+            <a href="/ContactUs" aria-label="Contact Us">
               <Button
                 variant="gradient"
                 size="sm"

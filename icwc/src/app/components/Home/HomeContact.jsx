@@ -27,7 +27,7 @@ export default function HomeContact() {
               value={
                 <a
                   href="hello@ironcitywatchcompany.com"
-                  aria-label="ICWC email"
+                  aria-label="hello@ironcitywatchcompany.com"
                 >
                   hello@ironcitywatchcompany.com
                 </a>
@@ -37,7 +37,7 @@ export default function HomeContact() {
               title="Phone"
               text="Call us for assistance."
               value={
-                <a href="tel:2051234567" aria-label="ICWC phone">
+                <a href="tel:2051234567" aria-label="+1 (205) 123-4567">
                   +1 (205) 123-4567
                 </a>
               }
