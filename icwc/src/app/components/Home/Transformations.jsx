@@ -8,7 +8,6 @@ import {
 } from "@material-tailwind/react";
 
 import Image from "next/image";
-import StopWatch from "../../../../public/Images/StopWatch.png";
 import WatchBanner from "../../../../public/Images/WatchBanner_Medium.webp";
 
 export default function Transformations() {

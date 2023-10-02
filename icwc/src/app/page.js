@@ -1,7 +1,6 @@
 "use client"
 import Header from './components/Navigation/Header';
 import Image from 'next/image'
-import WatchesRow from '../../public/Images/WatchesRow.jpg'
 import Services from './components/Home/Services';
 import Sourcing from './components/Home/Sourcing';
 import Footer from './components/Navigation/Footer';

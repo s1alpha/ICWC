@@ -96,7 +96,7 @@ export default function Footer() {
             &copy; {currentYear}{" "}
             <a
               className="text-[12px]"
-              href=""
+              href="/"
               aria-label="IronCityWatchCompany"
             >
               IronCityWatchCompany
