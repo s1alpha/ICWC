@@ -93,7 +93,7 @@ export default function MainHero() {
                 transition={{ ease: "easeOut", duration: 1.5 }}
               >
                 <h1 className="text-white text-center lg:text-left max-w-[700px] text-[48px] font-bold leading-[50px] mb-8 font-['Roboto'] ">
-                  Luxury Servicing and Restoration
+                  Luxury Watch Servicing and Restoration
                 </h1>
               </motion.div>
               <motion.div

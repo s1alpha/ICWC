@@ -85,7 +85,7 @@ export function Service1() {
       {" "}
       <div className="h-full flex flex-col justify-start items-start gap-1">
         <h2 className="self-stretch text-center  text-[#182835] text-[2.5rem] lg:text-[32px] font-bold font-['Roboto'] leading-[60px]">
-          Expert COA{" "}
+          Expert Movement Service{" "}
         </h2>
         <p className="self-stretch max-w-[400px] text-center text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
           A clean, oil, and adjust performed by our team with careful attention
@@ -126,8 +126,8 @@ export function Service2() {
           Restorations with Care
         </h2>
         <p className="self-stretch max-w-[400px] text-center text-gray-800 text-[1.2rem] lg:text-base font-normal font-['Roboto'] leading-normal">
-          Our expert team will assess your watch and provide a detailed
-          restoration plan to return it to its original glory.
+          Our team will assess your watch and provide a detailed restoration
+          plan to return it to its original glory.
         </p>
       </div>
     </motion.div>

@@ -35,7 +35,10 @@ export default function HomeContact() {
               text="Call us for assistance."
               value={<a href="tel:2051234567">+1 (205) 123-4567</a>}
             />
-            <DetailCard title="Office" text="Birmingham, Alabama" />
+            <DetailCard
+              title="Office"
+              text="1775 Independence Court, Suite 102"
+            />
           </div>
           <Image
             src={ContactImage}

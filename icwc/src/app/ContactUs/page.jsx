@@ -70,6 +70,11 @@ export function Form() {
   const onSubmit = async (data) => {
     console.log(data);
   };
+
+  const handleServiceSelection = (e) => {
+    console.log(e.target.value);
+  };
+
   return (
     <>
       <form
@@ -98,9 +103,15 @@ export function Form() {
           placeholder="Email"
           className="shadow-inner p-2 border-b-2 border-gray-400 mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
         />
+        <textarea
+          name="message"
+          {...register("message")}
+          placeholder="Message"
+          className="min-h-[120px] shadow-inner p-2 mb-12 border-b-2 border-gray-600 max-w-[400px] rounded-sm focus:outline-none focus:border-r-4"
+        />
 
         {/* <p className="mb-2 text-gray-600 font-bold">Interest:</p> */}
-        <div className="max-w-[400px] p-2 shadow-inner border-2 mb-12">
+        {/* <div className="max-w-[400px] p-2 shadow-inner border-2 mb-12">
           <select
             name="type"
             {...register("type", {
@@ -115,14 +126,54 @@ export function Form() {
             <option value="other">Other</option>
           </select>
         </div>
-        {errors?.type?.type === "required" && <p>This field is required</p>}
+        {errors?.type?.type === "required" && <p>This field is required</p>} */}
+        <div className="max-w-[400px] p-2 mb-12 flex flex-col justify-center items-left gap-4">
+          <label className="flex flex-row gap-2">
+            <input
+              name="fruit"
+              {...register("fruit", { required: "Please select fruits" })}
+              type="checkbox"
+              value="Banana"
+              className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
+              onChange={(e) => handleServiceSelection(e)}
+            />{" "}
+            <p className="text-gray-600 "> &nbsp;Watch Repair Estimate</p>
+          </label>
+          <label className="flex flex-row gap-2">
+            <input
+              name="fruit"
+              {...register("fruit", { required: "Please select fruits" })}
+              type="checkbox"
+              value="Apple"
+              className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
+              onChange={(e) => handleServiceSelection(e)}
+            />{" "}
+            <p className="text-gray-600  ">&nbsp;Timepiece Sourcing</p>
+          </label>
+          <label className="flex flex-row gap-2">
+            <input
+              name="fruit"
+              {...register("fruit", { required: "Please select fruits" })}
+              type="checkbox"
+              value="Cherry"
+              className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
+              onChange={(e) => handleServiceSelection(e)}
+            />{" "}
+            <p className="text-gray-600 ">&nbsp;General Assesment</p>
+          </label>
+          <label className="flex flex-row gap-2">
+            <input
+              name="fruit"
+              {...register("fruit", { required: "Please select fruits" })}
+              type="checkbox"
+              value="Cherry"
+              className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
+              onChange={(e) => handleServiceSelection(e)}
+            />{" "}
+            <p className="text-gray-600">&nbsp;Other</p>
+          </label>
+        </div>
 
-        <textarea
-          name="message"
-          {...register("message")}
-          placeholder="Message"
-          className="min-h-[120px] shadow-inner p-2 mb-12 border-b-2 border-gray-600 max-w-[400px] rounded-sm focus:outline-none focus:border-r-4"
-        />
         <div className="w-full flex justify-left ">
           {" "}
           <Button

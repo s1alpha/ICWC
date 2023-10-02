@@ -25,7 +25,7 @@ export default function Sourcing() {
             <div className=" self-stretch max-w-[400px] lg:max-w-[700px] text-gray-800 text-[24px] font-normal font-['Roboto'] leading-[27px] text-white text-center lg:text-left">
               We&apos;ll source and qualify the watch you&apos;re looking for,
               even if we don&apos;t have it. You tell us the specs, we&apos;ll
-              find it. Our team will look far and wide for that specific
+              find it. Our team will look far and wide for your specific
               timepiece.
             </div>
             <div className="w-full pt-4 flex flex-row justify-center lg:justify-start items-start gap-4 inline-flex">
