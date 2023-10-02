@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
 <meta property="og:title" content="IronCityWatchCo. | Restorations | Repairs | Sourcing"/>
 <meta property="og:url" content="https://icwc.vercel.app"/>
 <meta property="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+{/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> */}
 </head>
       <body className={inter.className}>{children}</body>
       
