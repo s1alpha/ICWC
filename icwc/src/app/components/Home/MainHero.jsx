@@ -120,7 +120,7 @@ export default function MainHero() {
                       Contact Us
                     </Button>
                   </a>
-                  <a href="/WatchRepair" aria-label="WatchRepair button">
+                  <a href="/WatchRepair" aria-label="Learn More">
                     <Button
                       variant="gradient"
                       className="rounded-sm font-['Roboto'] px-2 py-2 min-w-[200px] text font-thin text-white border-2 border-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"

@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-row justify-center items-center gap-8 inline-flex">
               <a
-                aria-label="home"
+                aria-label="Home"
                 href="/"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
@@ -54,7 +54,7 @@ export default function Footer() {
                 WatchRepair
               </a>
               <a
-                aria-label="ContactUs"
+                aria-label="Contact Us"
                 href="/ContactUs"
                 className="dark:text-white w-[100px] text-gray-800  font-['Roboto'] leading-normal text-center"
               >
