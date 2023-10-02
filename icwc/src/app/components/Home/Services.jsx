@@ -68,7 +68,7 @@ export function Service1() {
   };
 
   useEffect(() => {
-    console.log("in view", inView);
+    // console.log("in view", inView);
     if (inView) {
       controls.start("visible");
     }
@@ -106,7 +106,7 @@ export function Service2() {
   };
 
   useEffect(() => {
-    console.log("in view", inView);
+    // console.log("in view", inView);
     if (inView) {
       controls.start("visible");
     }
@@ -144,7 +144,7 @@ export function Service3() {
   };
 
   useEffect(() => {
-    console.log("in view", inView);
+    // console.log("in view", inView);
     if (inView) {
       controls.start("visible");
     }

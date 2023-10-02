@@ -68,11 +68,11 @@ export function Form() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log(data);
+    // console.log(data);
   };
 
   const handleServiceSelection = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
 
   return (
