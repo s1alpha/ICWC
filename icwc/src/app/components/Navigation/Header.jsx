@@ -130,16 +130,17 @@ export default function Header() {
           className="flex flex-col justify-center items-center h-full "
         >
           {navList}
-
-          <Button
-            variant="gradient"
-            size="sm"
-            fullWidth
-            href="/ContactUs"
-            className="mb-2 bg-gray-800"
-          >
-            <span>Contact Us</span>
-          </Button>
+          <a href="/ContactUs" aria-label="Contact Us" className="w-full">
+            <Button
+              variant="gradient"
+              size="sm"
+              fullWidth
+              href="/ContactUs"
+              className="mb-2 w-full bg-gray-800"
+            >
+              <span>Contact Us</span>
+            </Button>
+          </a>
         </Collapse>
       </Navbar>
     </>
