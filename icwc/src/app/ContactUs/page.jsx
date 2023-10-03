@@ -1,5 +1,8 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { db } from "../lib/firebase";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import Footer from "../components/Navigation/Footer";
 import Header from "../components/Navigation/Header";
 import FixingWatch from "../../../public/Images/FixingWatchFar.png";
@@ -61,14 +64,50 @@ export default function ContactUs() {
 }
 
 export function Form() {
+  const [loading, setLoading] = useState();
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
+
   const onSubmit = async (data) => {
     // console.log(data);
+    const today = new Date();
+    setLoading(true);
+    const formData = {
+      to: ["joe@ironcitywatchco.com"],
+      // from: 'NoogaNugs Contact Form <nick@stage-1.io>',
+      // cc: 'sales@createnuevo.com',
+      message: {
+        subject: "📃 NEW ICWC Form Submission [ContactUs]",
+        html: `
+        <h2>Message from ${data.name} from your website.</h2>
+          <p><strong>Name:</strong> ${data.name}</p>
+          <p><strong>Email:</strong> ${data.email}</p>
+          <p><strong>Request Type:</strong> ${data.fruit}</p>
+          <p><strong>Message:</strong> ${data.message}</p>
+          <p><strong>Submitted:</strong> ${today}</p>
+        `,
+      },
+      // created_At: new Date(),
+    };
+    await addDoc(collection(db, "contact"), formData)
+      .then(() => {
+        // setSuccess(true);
+        // setContactForm(false);
+        // clearData();
+        // handleOpen();
+        console.log("SUCCESS");
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        // setSuccess(false);
+        setLoading(false);
+      });
+    console.log("sent message");
   };
 
   const handleServiceSelection = (e) => {
@@ -133,7 +172,7 @@ export function Form() {
               name="fruit"
               {...register("fruit", { required: "Please select fruits" })}
               type="checkbox"
-              value="Banana"
+              value="Watch Repair"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
               onChange={(e) => handleServiceSelection(e)}
             />{" "}
@@ -144,7 +183,7 @@ export function Form() {
               name="fruit"
               {...register("fruit", { required: "Please select fruits" })}
               type="checkbox"
-              value="Apple"
+              value="Timepiece Sourcing"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
               onChange={(e) => handleServiceSelection(e)}
             />{" "}
@@ -155,7 +194,7 @@ export function Form() {
               name="fruit"
               {...register("fruit", { required: "Please select fruits" })}
               type="checkbox"
-              value="Cherry"
+              value="General Assesment"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
               onChange={(e) => handleServiceSelection(e)}
             />{" "}
@@ -166,7 +205,7 @@ export function Form() {
               name="fruit"
               {...register("fruit", { required: "Please select fruits" })}
               type="checkbox"
-              value="Cherry"
+              value="Other"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
               onChange={(e) => handleServiceSelection(e)}
             />{" "}
