@@ -125,7 +125,7 @@ export default function Footer() {
             </Typography> */}
             <Typography
               as="a"
-              href="#"
+              href="https://instagram.com/ironcitywatches"
               aria-label="Instagram"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
