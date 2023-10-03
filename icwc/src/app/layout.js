@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
 <meta property="og:image" content="https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png"/>
 <meta property="og:title" content="IronCityWatchCo. | Restorations | Repairs | Sourcing"/>
-<meta property="og:url" content="https://icwc.vercel.app"/>
+<meta property="og:url" content="https://ironcitywatchco.com"/>
 <meta property="viewport" content="width=device-width, initial-scale=1"/>
 {/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> */}
 </head>
