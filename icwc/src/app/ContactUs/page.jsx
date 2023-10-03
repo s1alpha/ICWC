@@ -125,7 +125,7 @@ export function Form() {
           {...register("name")}
           name="name"
           placeholder="Name"
-          className="shadow-inner p-2 border-b-2 border-gray-400 mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
+          className="shadow-inner p-2 border-b-2 border-gray-400 text-black mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
         />
         {/* <p className="mb-2 text-gray-600 font-bold">Email: </p>{" "} */}
         <p className="lg:inline text-[8px] lg:text-[12px] text-gray-400 mb-4 w-full text-center lg:text-left">
@@ -140,13 +140,13 @@ export function Form() {
           })}
           name="email"
           placeholder="Email"
-          className="shadow-inner p-2 border-b-2 border-gray-400 mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
+          className="shadow-inner text-black p-2 border-b-2 border-gray-400 mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
         />
         <textarea
           name="message"
           {...register("message")}
           placeholder="Message"
-          className="min-h-[120px] shadow-inner p-2 mb-12 border-b-2 border-gray-600 max-w-[400px] rounded-sm focus:outline-none focus:border-r-4"
+          className="min-h-[120px] text-black shadow-inner p-2 mb-12 border-b-2 border-gray-600 max-w-[400px] rounded-sm focus:outline-none focus:border-r-4"
         />
 
         {/* <p className="mb-2 text-gray-600 font-bold">Interest:</p> */}
