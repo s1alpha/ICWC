@@ -106,13 +106,21 @@ export function BottomSectionVideo() {
 
       <div className="h-full w-full flex flex-col lg:flex-row gap-0 ">
         <div className="w-full flex flex-col gap-0 justif-start ">
-          <p className="text-gray-600 font-['Roboto'] -mb-4">2023</p>
-          <h1 className="text-[32px] font-bold text-[#182835] leading-[60px] mb-1">
+          <p className="text-gray-600 font-['Roboto']">2023</p>
+          <h1 className="text-[32px] font-bold text-[#182835] leading-[40px] mb-0">
             Transformations
           </h1>
-          <h3 className="text-[14px] text-gray-800">
+          <h3 className="text-[14px] text-gray-800 mb-8">
             Restorations done with class by expert handelers
           </h3>
+          <a href="/ContactUs" aria-label="Get an estimate button">
+            <Button
+              variant="gradient"
+              className="rounded-sm px-2 py-2 min-w-[140px] border-2 border-[#182835] bg-[#182835] text font-normal text-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
+            >
+              Get an estimate
+            </Button>
+          </a>
         </div>
         <div className="w-full w-max-[700px] py-12">
           <h2 className="text-gray-600">
