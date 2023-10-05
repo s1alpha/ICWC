@@ -44,7 +44,19 @@ export default function HomeContact() {
             />
             <DetailCard
               title="Office"
-              text="1775 Independence Court, Suite 102"
+              text="Visit us"
+              value={
+                <a
+                  href="http://maps.google.com/?q=1776 Independence Court, Suite 102, Vestavia Hills, AL, 35216"
+                  aria-label="1776 Independence Court, Suite 102, Vestavia Hills, AL, 35216"
+                  className="text-center  text-balance"
+                >
+                  <p className="text-wrap:balance">
+                    1776 Independence Court, Suite 102, Vestavia Hills, AL,
+                    35216
+                  </p>
+                </a>
+              }
             />
           </div>
           <Image
