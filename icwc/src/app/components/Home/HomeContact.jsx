@@ -37,7 +37,7 @@ export default function HomeContact() {
               title="Phone"
               text="Call us for assistance."
               value={
-                <a href="tel:2051234567" aria-label="+1 (205) 123-4567">
+                <a href="tel:+12057898034" aria-label="+1 (205) 789-8034">
                   +1 (205) 789-8034
                 </a>
               }
