@@ -12,6 +12,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+   
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6VHWTCY7Z"></script>
+<script>
+  {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M6VHWTCY7Z');
+  `}
+  </script>
 <title>IronCityWatchCompany</title>
 
 <meta property="og:image" content="https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png"/>
@@ -19,6 +29,7 @@ export default function RootLayout({ children }) {
 <meta property="og:url" content="https://ironcitywatchco.com"/>
 <meta property="viewport" content="width=device-width, initial-scale=1"/>
 {/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> */}
+
 </head>
       <body className={inter.className}>{children}</body>
       
