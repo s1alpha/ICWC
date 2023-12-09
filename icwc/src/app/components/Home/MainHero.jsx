@@ -15,8 +15,6 @@ import PearlText from "../../../../public/LogoImages/Pearl_Text.png";
 
 // import ReactPlayer from "react-player";
 import { motion } from "framer-motion";
-import { Stream } from "@cloudflare/stream-react";
-import { VideoPlayer } from "react-video-js-player";
 
 const ReactPlayer = lazy(() => import("react-player"));
 
