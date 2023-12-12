@@ -35,7 +35,7 @@ export default function MainHero() {
 
   return (
     <>
-      <section className="relative py-[5%] lg:px-[10%] w-full h-auto lg:aspect-video bg-white overflow-hidden flex flex-col md:flex-row justify-center items-center lg:items-center">
+      <section className="relative py-[5%] lg:px-[10%] w-full md:h-auto h-[100vh] lg:aspect-video bg-white overflow-hidden flex flex-col md:flex-row justify-center items-center lg:items-center">
         {!isPlaying && (
           <div className="absolute top-0 aspect-video w-full h-full bg-black opacity-100 z-[3] flex flex-col justify-center items-center">
             <Image
