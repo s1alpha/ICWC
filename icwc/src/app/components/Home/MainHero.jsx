@@ -22,7 +22,7 @@ export default function MainHero() {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoIdOrSignedToken = "aba71fa4392fdda8026474776b1f0a86";
 
-  // const videoElement = document.getElementById("ID_of_video");
+  // const videoElement = document.getElementById("ReactPlayer");
   // videoElement.addEventListener("suspend", () => {
   //   // suspend invoked
   //   // show play button
@@ -37,7 +37,13 @@ export default function MainHero() {
     <>
       <section className="relative py-[5%] lg:px-[10%] w-full md:h-auto h-[100vh] lg:aspect-video bg-white overflow-hidden flex flex-col md:flex-row justify-center items-center lg:items-center">
         {!isPlaying && (
-          <div className="absolute top-0 aspect-video w-full md:h-full h-[100vh] bg-black opacity-100 z-[3] flex flex-col justify-center items-center">
+          <motion.div
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 0.5 }}
+            exit={{ opacity: 0 }}
+            className="absolute top-0 aspect-video w-full md:h-full h-[100vh] bg-[#182835] opacity-100 z-[3] flex flex-col justify-center items-center"
+          >
             <Image
               src={PearlIcon}
               alt="ICWC Pearl Icon"
@@ -46,7 +52,7 @@ export default function MainHero() {
             <h1 className="text-white text-center max-w-[700px] text-[16px] mt-2 lg:text-[48px] font-black leading-[50px] lg:mb-8 font-['Roboto'] ">
               Iron City Watch Co.
             </h1>
-          </div>
+          </motion.div>
         )}
         <div className="absolute top-0 aspect-video w-full bg-black opacity-0 z-[3]"></div>
         <div className="hidden md:flex absolute top-0 aspect-video w-full bg-white z-[2] lg:-mt-[40px]">
@@ -71,6 +77,7 @@ export default function MainHero() {
             width={"100%"}
             height={"100%"}
             className="object-fit h-full "
+            id="ReactPlayer"
             // style={{
             //   position: "absolute",
             //   top: "40px",
@@ -106,6 +113,7 @@ export default function MainHero() {
             width={"100%"}
             height={"100%"}
             className="object-cover "
+            id="ReactPlayer"
             // style={{
             //   position: "absolute",
             //   top: "40px",
