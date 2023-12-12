@@ -22,19 +22,33 @@ export default function MainHero() {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoIdOrSignedToken = "aba71fa4392fdda8026474776b1f0a86";
 
+  // const videoElement = document.getElementById("ID_of_video");
+  // videoElement.addEventListener("suspend", () => {
+  //   // suspend invoked
+  //   // show play button
+  // });
+
+  // videoElement.addEventListener("play", () => {
+  //   // video is played
+  //   // remove play button UI
+  // });
+
   return (
     <>
-      <section className="relative py-[5%] lg:px-[10%] w-full h-[100vh] lg:aspect-video bg-white overflow-hidden flex flex-col md:flex-row justify-center items-center lg:items-center">
+      <section className="relative py-[5%] lg:px-[10%] w-full h-auto lg:aspect-video bg-white overflow-hidden flex flex-col md:flex-row justify-center items-center lg:items-center">
         {!isPlaying && (
-          <div className="absolute top-0 aspect-video w-full h-full bg-black opacity-100 z-[3] flex justify-center items-center">
+          <div className="absolute top-0 aspect-video w-full h-full bg-black opacity-100 z-[3] flex flex-col justify-center items-center">
             <Image
               src={PearlIcon}
               alt="ICWC Pearl Icon"
               className="w-48 h-auto z-[10]"
             />
+            <h1 className="text-white text-center max-w-[700px] text-[16px] mt-2 lg:text-[48px] font-black leading-[50px] lg:mb-8 font-['Roboto'] ">
+              Iron City Watch Co.
+            </h1>
           </div>
         )}
-        <div className="absolute top-0 aspect-video w-full bg-black opacity-20 h-full z-[3]"></div>
+        <div className="absolute top-0 aspect-video w-full bg-black opacity-0 z-[3]"></div>
         <div className="hidden md:flex absolute top-0 aspect-video w-full bg-white z-[2] lg:-mt-[40px]">
           {/* <Image src={Main} className="object-cover h-full w-full" /> */}
           {/* <Stream
