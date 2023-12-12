@@ -8,6 +8,7 @@ import Header from "../components/Navigation/Header";
 import FixingWatch from "../../../public/Images/FixingWatchFar.png";
 import PearlIcon from "../../../public/LogoImages/Pearl_Icon.png";
 import Image from "next/image";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import { useForm } from "react-hook-form";
 import {
@@ -17,6 +18,7 @@ import {
   Button,
   IconButton,
   Card,
+  Spinner,
 } from "@material-tailwind/react";
 
 export default function ContactUs() {
@@ -65,23 +67,27 @@ export default function ContactUs() {
 
 export function Form() {
   const [loading, setLoading] = useState();
+  const [sent, setSent] = useState(false);
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmit = async (data) => {
     // console.log(data);
+    console.log("hello");
     const today = new Date();
     setLoading(true);
     const formData = {
-      to: ["joe@ironcitywatchco.com"],
+      //to: ["joe@ironcitywatchco.com"],
+      to: ["nick@stage-1.io"],
       // from: 'NoogaNugs Contact Form <nick@stage-1.io>',
       // cc: 'sales@createnuevo.com',
       message: {
-        subject: "📃 NEW ICWC Form Submission [ContactUs]",
+        subject: "📃 ICWC Form Submission [ContactUs]",
         html: `
         <h2>Message from ${data.name} from your website.</h2>
           <p><strong>Name:</strong> ${data.name}</p>
@@ -93,31 +99,48 @@ export function Form() {
       },
       // created_At: new Date(),
     };
-    await addDoc(collection(db, "contact"), formData)
-      .then(() => {
-        // setSuccess(true);
-        // setContactForm(false);
-        // clearData();
-        // handleOpen();
-        console.log("SUCCESS");
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.log(err);
-        // setSuccess(false);
-        setLoading(false);
-      });
-    console.log("sent message");
+
+    try {
+      await addDoc(collection(db, "contact"), formData)
+        .then(() => {
+          // setSuccess(true);
+          // setContactForm(false);
+          // clearData();
+          // handleOpen();
+          console.log("SUCCESS");
+          setLoading(false);
+          setSent(true);
+          reset({
+            name: "",
+            email: "",
+            message: "",
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+          // setSuccess(false);
+          setLoading(false);
+          setSent(false);
+        });
+      console.log("sent message");
+    } catch (e) {
+      console.log("Message error", e);
+      setSent(false);
+    }
   };
 
   const handleServiceSelection = (e) => {
     // console.log(e.target.value);
   };
 
+  useEffect(() => {
+    console.log(loading);
+  }, []);
+
   return (
     <>
       <form
-        className=" px-0 lg:px-4 py-2 w-full flex flex-col justify-center items-left"
+        className="px-0 lg:px-4 py-2 w-full flex flex-col justify-center lg:items-left items-center"
         onSubmit={handleSubmit(onSubmit)}
       >
         {/* <p className="mb-2 font-bold text-gray-600">Name:</p> */}
@@ -125,10 +148,10 @@ export function Form() {
           {...register("name")}
           name="name"
           placeholder="Name"
-          className="shadow-inner p-2 border-b-2 border-gray-400 text-black mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
+          className="shadow-inner p-2 border-b-2 border-gray-400 text-black mb-12 min-w-[500px] max-w-[90vw]  rounded-sm focus:outline-none focus:border-r-4"
         />
         {/* <p className="mb-2 text-gray-600 font-bold">Email: </p>{" "} */}
-        <p className="lg:inline text-[8px] lg:text-[12px] text-gray-400 mb-4 w-full text-center lg:text-left">
+        <p className="lg:inline text-[12px] lg:text-[12px] text-gray-400 mb-4 w-full text-center min-w-[500px] ">
           WE DO NOT SEND PROMOTIONAL CONTENT UNLESS OPTED IN
         </p>
         <input
@@ -140,13 +163,13 @@ export function Form() {
           })}
           name="email"
           placeholder="Email"
-          className="shadow-inner text-black p-2 border-b-2 border-gray-400 mb-12 max-w-[400px]  rounded-sm focus:outline-none focus:border-r-4"
+          className="shadow-inner text-black p-2 border-b-2 border-gray-400 mb-12 min-w-[500px] max-w-[90vw] rounded-sm focus:outline-none focus:border-r-4"
         />
         <textarea
           name="message"
           {...register("message")}
           placeholder="Message"
-          className="min-h-[120px] text-black shadow-inner p-2 mb-12 border-b-2 border-gray-600 max-w-[400px] rounded-sm focus:outline-none focus:border-r-4"
+          className="min-h-[120px] text-black shadow-inner p-2 mb-12 border-b-2 border-gray-600 min-w-[500px] max-w-[90vw] rounded-sm focus:outline-none focus:border-r-4"
         />
 
         {/* <p className="mb-2 text-gray-600 font-bold">Interest:</p> */}
@@ -166,7 +189,7 @@ export function Form() {
           </select>
         </div>
         {errors?.type?.type === "required" && <p>This field is required</p>} */}
-        <div className="max-w-[400px] p-2 mb-12 flex flex-col justify-center items-left gap-4">
+        <div className="max-w-[400px] p-2 mb-12 flex flex-col justify-center items-left gap-4 min-w-[300px]">
           <label className="flex flex-row gap-2">
             <input
               name="fruit"
@@ -213,14 +236,39 @@ export function Form() {
           </label>
         </div>
 
-        <div className="w-full flex justify-left ">
+        <div className="w-full flex justify-center mb-24">
           {" "}
-          <Button
+          {loading ? (
+            <div className="lg:w-[200px] w-[80vw] bg-[#182835] flex justify-center items-center p-2 h-14 mt-8">
+              <Spinner />
+            </div>
+          ) : (
+            <>
+              {sent ? (
+                <div className="">
+                  <div className="lg:w-[400px] w-[80vw] bg-[#182835] flex justify-center items-center flex-col p-2 h-14 mt-8">
+                    <p className="text-xl font-bold text-white">
+                      <CheckCircleIcon style={{ color: "white" }} /> We will be
+                      in touch shortly
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <Button
+                  type="submit"
+                  className="bg-[#182835] border font-bold text-2xl text-white h-14 w-[80vw] lg:w-[200px] mt-8 rounded-md"
+                >
+                  Submit
+                </Button>
+              )}
+            </>
+          )}
+          {/* <Button
             type="submit"
             className="bg-[#182835] border text-white w-full lg:w-[200px] mt-8 "
           >
             Submit
-          </Button>
+          </Button> */}
         </div>
       </form>
     </>

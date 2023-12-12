@@ -26,7 +26,7 @@ export default function MainHero() {
     <>
       <section className="relative py-[5%] lg:px-[10%] w-full h-[100vh] lg:aspect-video bg-white overflow-hidden flex flex-col md:flex-row justify-center items-center lg:items-center">
         {!isPlaying && (
-          <div className="absolute top-0 aspect-video h-full bg-white opacity-100 z-[3] flex justify-center items-center">
+          <div className="absolute top-0 aspect-video h-full bg-black opacity-100 z-[3] flex justify-center items-center">
             <Image
               src={PearlIcon}
               alt="ICWC Pearl Icon"
@@ -34,7 +34,7 @@ export default function MainHero() {
             />
           </div>
         )}
-        <div className="absolute top-0 aspect-video h-full bg-black opacity-0 z-[3]"></div>
+        <div className="absolute top-0 aspect-video h-full bg-black opacity-20 -mt-[70px] z-[3]"></div>
         <div className="hidden md:flex absolute top-0 aspect-video h-full bg-white z-[2] lg:-mt-[40px]">
           {/* <Image src={Main} className="object-cover h-full w-full" /> */}
           {/* <Stream
@@ -45,22 +45,7 @@ export default function MainHero() {
             autoplay
             onPlay={() => setIsPlaying(true)}
           /> */}
-          {/* <VideoPlayer
-            src={
-              "https://customer-jcu3t54p5nuo4woo.cloudflarestream.com/aba71fa4392fdda8026474776b1f0a86/manifest/video.m3u8"
-            }
-            autoplay={true}
-            height="400"
-            width="400"
-          /> */}
-          {/* <div className="relative p-4">
-            <iframe
-              src="https://customer-jcu3t54p5nuo4woo.cloudflarestream.com/aba71fa4392fdda8026474776b1f0a86/iframe?autoplay=true&poster=https%3A%2F%2Fcustomer-jcu3t54p5nuo4woo.cloudflarestream.com%2Faba71fa4392fdda8026474776b1f0a86%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-              className="h-full w-full"
-              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-              allowfullscreen="true"
-            ></iframe>
-          </div> */}
+
           <ReactPlayer
             url="https://customer-jcu3t54p5nuo4woo.cloudflarestream.com/aba71fa4392fdda8026474776b1f0a86/manifest/video.m3u8"
             playing={true}
@@ -80,7 +65,7 @@ export default function MainHero() {
             // }}
           />
         </div>
-        <div className="flex md:hidden absolute top-0 w-full z-[2]">
+        <div className="flex md:hidden absolute top-0 w-full z-[2] bg-black bg-opacity-40">
           {/* <Image src={Main} className="object-cover h-full w-full" /> */}
 
           {/* <Stream
@@ -93,12 +78,6 @@ export default function MainHero() {
             loop={true}
             onPlay={() => setIsPlaying(true)}
           /> */}
-          {/* <iframe
-            src="https://customer-jcu3t54p5nuo4woo.cloudflarestream.com/aba71fa4392fdda8026474776b1f0a86/iframe?poster=https%3A%2F%2Fcustomer-jcu3t54p5nuo4woo.cloudflarestream.com%2Faba71fa4392fdda8026474776b1f0a86%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-            height="720"
-            width="1280"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-          ></iframe> */}
           <ReactPlayer
             url="https://customer-jcu3t54p5nuo4woo.cloudflarestream.com/0b88c495cf2bb65e96f5b39d9ac70e53/manifest/video.m3u8"
             playing={true}
@@ -134,14 +113,14 @@ export default function MainHero() {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ ease: "easeOut", duration: 1.5 }}
-                className="justify-center items-center flex flex-col"
+                className="justify-center items-center lg:items-start flex flex-col mb-8 lg:mb-0"
               >
                 <Image
                   src={PearlIcon}
                   alt="ICWC Pearl Icon"
                   className="w-14 h-auto mb-8"
                 />
-                <h1 className="text-white text-center lg:text-left max-w-[700px] text-[48px] font-bold leading-[50px] mb-8 font-['Roboto'] ">
+                <h1 className="text-white text-center lg:text-left max-w-[700px] text-[48px] font-black leading-[50px] mb-8 font-['Roboto'] ">
                   Luxury Watch Servicing and Restoration
                 </h1>
               </motion.div>
@@ -149,32 +128,31 @@ export default function MainHero() {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
+                className="w-full px-24 lg:px-0"
               >
-                <div className="w-full flex justify-center items-center">
-                  <h1 className="text-white text-center text-2xl font-black lg:text-left lg:text-[18px] lg:max-w-[400px] max-w-[90vw] align font-['Roboto'] p-2 ">
-                    Experience the finest care for your Rolex timepiece. Restore
-                    your movement to factory Swiss standards.
-                  </h1>
-                </div>
+                <h1 className="text-white text-center text-2xl lg:text-left lg:text-2xl w-full font-['Roboto']">
+                  Experience the finest care for your timepiece. Restore your
+                  movement to factory Swiss standards.
+                </h1>
               </motion.div>
               <motion.div
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ ease: "easeOut", duration: 2.5 }}
               >
-                <div className="w-full flex flex-col lg:flex-row justify-center md:justify-start items-center gap-4 mt-20 lg:mt-10">
+                <div className="w-full flex flex-col lg:flex-row justify-center md:justify-start items-center gap-4 lg:gap-0 mt-20 lg:mt-10">
                   <a href="/ContactUs" aria-label="Contact Us">
                     <Button
                       variant="gradient"
-                      className="rounded-sm font-['Roboto'] px-2 py-3 min-w-[220px] border-2 border-[#182835] bg-[#182835] text font-black text-white"
+                      className="rounded-sm font-['Roboto'] px-2 py-3 min-w-[220px] border-2 border-[#182835] bg-[#182835] text-2xl font-black text-white hover:bg-opacity-70"
                     >
-                      Contact Us
+                      Get an Estimate
                     </Button>
                   </a>
                   <a href="/WatchRepair" aria-label="Learn More">
                     <Button
                       variant="gradient"
-                      className="rounded-sm font-['Roboto'] px-2 py-3 min-w-[220px] text font-black text-white border-2 border-white shadow-[0_2px_20px_0.1px_rgba(255,255,255,0.2)]"
+                      className="rounded-sm font-['Roboto'] px-2 py-3 min-w-[220px] text-xl font-bold text-white underline "
                     >
                       Learn More
                     </Button>

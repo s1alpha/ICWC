@@ -80,7 +80,7 @@ export default function Header() {
                 variant="gradient"
                 size="sm"
                 href="/ContactUs"
-                className="hidden lg:inline-block bg-gray-800 px-6 py-1 rounded-sm font-['Roboto']"
+                className="hidden lg:inline-block bg-gray-800 px-6 py-1 rounded-sm font-['Roboto'] "
               >
                 Contact Us
               </Button>
@@ -130,15 +130,19 @@ export default function Header() {
           className="flex flex-col justify-center items-center h-full "
         >
           {navList}
-          <a href="/ContactUs" aria-label="Contact Us" className="w-full">
+          <a
+            href="/ContactUs"
+            aria-label="Contact Us"
+            className="w-full flex justify-center"
+          >
             <Button
               variant="gradient"
               size="sm"
               fullWidth
               href="/ContactUs"
-              className="mb-2 w-full bg-gray-800"
+              className="mb-2 w-full bg-gray-800 max-w-[80vw] p-4 rounded-md"
             >
-              <span>Contact Us</span>
+              <span className="text-xl">Get an Estimate</span>
             </Button>
           </a>
         </Collapse>
