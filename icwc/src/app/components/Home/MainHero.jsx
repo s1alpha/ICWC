@@ -34,8 +34,8 @@ export default function MainHero() {
             />
           </div>
         )}
-        <div className="absolute top-0 aspect-video h-full bg-black opacity-20 -mt-[70px] z-[3]"></div>
-        <div className="hidden md:flex absolute top-0 aspect-video h-full bg-white z-[2] lg:-mt-[40px]">
+        <div className="absolute top-0 aspect-video w-full bg-black opacity-20 h-full z-[3]"></div>
+        <div className="hidden md:flex absolute top-0 aspect-video w-full bg-white z-[2] lg:-mt-[40px]">
           {/* <Image src={Main} className="object-cover h-full w-full" /> */}
           {/* <Stream
             controls
@@ -113,14 +113,14 @@ export default function MainHero() {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ ease: "easeOut", duration: 1.5 }}
-                className="justify-center items-center lg:items-start flex flex-col mb-8 lg:mb-0"
+                className="justify-center items-center lg:items-start flex flex-col mb-2 lg:mb-0"
               >
                 <Image
                   src={PearlIcon}
                   alt="ICWC Pearl Icon"
                   className="w-14 h-auto mb-8"
                 />
-                <h1 className="text-white text-center lg:text-left max-w-[700px] text-[48px] font-black leading-[50px] mb-8 font-['Roboto'] ">
+                <h1 className="text-white text-center lg:text-left max-w-[700px] text-[32px] lg:text-[48px] font-black leading-[50px] lg:mb-8 font-['Roboto'] ">
                   Luxury Watch Servicing and Restoration
                 </h1>
               </motion.div>
@@ -128,9 +128,9 @@ export default function MainHero() {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
-                className="w-full px-24 lg:px-0"
+                className="w-full px-8 lg:px-0"
               >
-                <h1 className="text-white text-center text-2xl lg:text-left lg:text-2xl w-full font-['Roboto']">
+                <h1 className="text-white text-center text-[16px] lg:text-left lg:text-2xl w-full font-['Roboto']">
                   Experience the finest care for your timepiece. Restore your
                   movement to factory Swiss standards.
                 </h1>
@@ -140,11 +140,11 @@ export default function MainHero() {
                 animate={{ y: 0 }}
                 transition={{ ease: "easeOut", duration: 2.5 }}
               >
-                <div className="w-full flex flex-col lg:flex-row justify-center md:justify-start items-center gap-4 lg:gap-0 mt-20 lg:mt-10">
+                <div className="w-full flex flex-col lg:flex-row justify-center md:justify-start items-center gap-4 lg:gap-0 mt-12 lg:mt-10">
                   <a href="/ContactUs" aria-label="Contact Us">
                     <Button
                       variant="gradient"
-                      className="rounded-sm font-['Roboto'] px-2 py-3 min-w-[220px] border-2 border-[#182835] bg-[#182835] text-2xl font-black text-white hover:bg-opacity-70"
+                      className="rounded-md font-['Roboto'] px-2 py-3 min-w-[220px] border-2 border-[#182835] bg-[#182835] text-[16px] font-black text-white hover:bg-opacity-70"
                     >
                       Get an Estimate
                     </Button>
@@ -152,7 +152,7 @@ export default function MainHero() {
                   <a href="/WatchRepair" aria-label="Learn More">
                     <Button
                       variant="gradient"
-                      className="rounded-sm font-['Roboto'] px-2 py-3 min-w-[220px] text-xl font-bold text-white underline "
+                      className="rounded-sm font-['Roboto'] px-2 py-3 min-w-[220px] text-[14px] font-bold text-white underline "
                     >
                       Learn More
                     </Button>

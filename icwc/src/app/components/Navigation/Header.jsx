@@ -74,7 +74,9 @@ export default function Header() {
             Material Tailwind
           </Typography> */}
           <div className="flex items-center gap-4">
-            <div className="mr-4 hidden lg:block text-black ">{navList}</div>
+            <div className="mr-4 hidden lg:block text-black text-[14px]">
+              {navList}
+            </div>
             <a href="/ContactUs" aria-label="Contact Us">
               <Button
                 variant="gradient"
@@ -127,9 +129,9 @@ export default function Header() {
         </div>
         <Collapse
           open={openNav}
-          className="flex flex-col justify-center items-center h-full "
+          className="flex flex-col justify-center items-center h-full text-[14px] "
         >
-          {navList}
+          <p className="text-[14px]">{navList}</p>
           <a
             href="/ContactUs"
             aria-label="Contact Us"
@@ -140,9 +142,9 @@ export default function Header() {
               size="sm"
               fullWidth
               href="/ContactUs"
-              className="mb-2 w-full bg-gray-800 max-w-[80vw] p-4 rounded-md"
+              className="mb-2 w-full bg-gray-800 max-w-[80vw] p-2 rounded-md"
             >
-              <span className="text-xl">Get an Estimate</span>
+              <span className="text-[14px]">Get an Estimate</span>
             </Button>
           </a>
         </Collapse>

@@ -83,7 +83,7 @@ export function Form() {
     setLoading(true);
     const formData = {
       //to: ["joe@ironcitywatchco.com"],
-      to: ["nick@stage-1.io"],
+      to: ["joe@ironcitywatchco.com"],
       // from: 'NoogaNugs Contact Form <nick@stage-1.io>',
       // cc: 'sales@createnuevo.com',
       message: {
@@ -148,12 +148,10 @@ export function Form() {
           {...register("name")}
           name="name"
           placeholder="Name"
-          className="shadow-inner p-2 border-b-2 border-gray-400 text-black mb-12 min-w-[500px] max-w-[90vw]  rounded-sm focus:outline-none focus:border-r-4"
+          className="shadow-inner p-2 border-b-2 border-gray-400 text-black mb-4 w-[90vw] lg:w-[400px] rounded-sm focus:outline-none focus:border-r-4"
         />
         {/* <p className="mb-2 text-gray-600 font-bold">Email: </p>{" "} */}
-        <p className="lg:inline text-[12px] lg:text-[12px] text-gray-400 mb-4 w-full text-center min-w-[500px] ">
-          WE DO NOT SEND PROMOTIONAL CONTENT UNLESS OPTED IN
-        </p>
+
         <input
           {...register("email", {
             pattern: {
@@ -163,13 +161,16 @@ export function Form() {
           })}
           name="email"
           placeholder="Email"
-          className="shadow-inner text-black p-2 border-b-2 border-gray-400 mb-12 min-w-[500px] max-w-[90vw] rounded-sm focus:outline-none focus:border-r-4"
+          className="shadow-inner text-black p-2 border-b-2 border-gray-400 w-[90vw] lg:w-[400px] rounded-sm focus:outline-none focus:border-r-4"
         />
+        <p className="lg:inline text-[10px] lg:text-[12px] text-gray-400 mb-4 w-full text-center w-[90vw] lg:w-[400px]">
+          WE DO NOT SEND PROMOTIONAL CONTENT UNLESS OPTED IN
+        </p>
         <textarea
           name="message"
           {...register("message")}
           placeholder="Message"
-          className="min-h-[120px] text-black shadow-inner p-2 mb-12 border-b-2 border-gray-600 min-w-[500px] max-w-[90vw] rounded-sm focus:outline-none focus:border-r-4"
+          className="min-h-[120px] text-black shadow-inner p-2 mb-12 border-b-2 border-gray-600 w-[90vw] lg:w-[400px] rounded-sm focus:outline-none focus:border-r-4"
         />
 
         {/* <p className="mb-2 text-gray-600 font-bold">Interest:</p> */}
@@ -189,7 +190,7 @@ export function Form() {
           </select>
         </div>
         {errors?.type?.type === "required" && <p>This field is required</p>} */}
-        <div className="max-w-[400px] p-2 mb-12 flex flex-col justify-center items-left gap-4 min-w-[300px]">
+        <div className="max-w-[400px] p-2 mb-12 flex flex-col justify-center items-left gap-4 max-w-[90vw]">
           <label className="flex flex-row gap-2">
             <input
               name="fruit"
@@ -256,7 +257,7 @@ export function Form() {
               ) : (
                 <Button
                   type="submit"
-                  className="bg-[#182835] border font-bold text-2xl text-white h-14 w-[80vw] lg:w-[200px] mt-8 rounded-md"
+                  className="bg-[#182835] border font-bold flex justify-center items-center text-white h-12 w-[80vw] lg:w-[200px] mt-8 rounded-md"
                 >
                   Submit
                 </Button>
