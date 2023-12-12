@@ -19,18 +19,18 @@ import { motion } from "framer-motion";
 const ReactPlayer = lazy(() => import("react-player"));
 
 export default function MainHero() {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const videoIdOrSignedToken = "aba71fa4392fdda8026474776b1f0a86";
 
   return (
     <>
       <section className="relative py-[5%] lg:px-[10%] w-full h-[100vh] lg:aspect-video bg-white overflow-hidden flex flex-col md:flex-row justify-center items-center lg:items-center">
         {!isPlaying && (
-          <div className="absolute top-0 aspect-video h-full bg-black opacity-100 z-[3] flex justify-center items-center">
+          <div className="absolute top-0 aspect-video w-full h-full bg-black opacity-100 z-[3] flex justify-center items-center">
             <Image
               src={PearlIcon}
               alt="ICWC Pearl Icon"
-              className="w-48 h-auto"
+              className="w-48 h-auto z-[10]"
             />
           </div>
         )}
@@ -84,7 +84,10 @@ export default function MainHero() {
             loop={true}
             controls={false}
             muted={true}
-            onPlay={() => setIsPlaying(true)}
+            onPlay={() => {
+              setIsPlaying(true);
+              console.log("playing");
+            }}
             playsinline={true}
             width={"100%"}
             height={"100%"}
@@ -162,6 +165,13 @@ export default function MainHero() {
             </>
           ) : (
             <></>
+            // <div className="absolute top-0 aspect-video h-full bg-black opacity-100 z-[3] flex justify-center items-center">
+            //   <Image
+            //     src={PearlIcon}
+            //     alt="ICWC Pearl Icon"
+            //     className="w-48 h-auto"
+            //   />
+            // </div>
           )}
         </div>
         <div className="hidden md:flex h-full w-full"></div>

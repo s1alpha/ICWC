@@ -131,7 +131,7 @@ export default function Header() {
           open={openNav}
           className="flex flex-col justify-center items-center h-full text-[14px] "
         >
-          <p className="text-[14px]">{navList}</p>
+          {navList}
           <a
             href="/ContactUs"
             aria-label="Contact Us"
