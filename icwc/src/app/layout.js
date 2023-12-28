@@ -13,28 +13,26 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-   
+        <title>IronCityWatchCompany</title>
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-M6VHWTCY7Z" />
+          <Script id="google-analytics">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-<title>IronCityWatchCompany</title>
-<Script src="https://www.googletagmanager.com/gtag/js?id=G-M6VHWTCY7Z" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-M6VHWTCY7Z');
-        `}
-      </Script>
+              gtag('config', 'G-M6VHWTCY7Z');
+            `}
+          </Script>
 
-<meta property="og:image" content="https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png"/>
-<meta property="og:title" content="IronCityWatchCo. | Restorations | Repairs | Sourcing"/>
-<meta property="og:url" content="https://ironcitywatchco.com"/>
-<meta property="viewport" content="width=device-width, initial-scale=1"/>
-{/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> */}
+        <meta property="og:image" content="https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png"/>
+        <meta property="og:title" content="IronCityWatchCo. | Restorations | Repairs | Sourcing"/>
+        <meta property="og:url" content="https://ironcitywatchco.com"/>
+        <meta property="viewport" content="width=device-width, initial-scale=1"/>
+      {/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> */}
 
-</head>
-      <body className={inter.className}>{children}</body>
+      </head>
+    <body className={inter.className}>{children}</body>
       
     </html>
   )
