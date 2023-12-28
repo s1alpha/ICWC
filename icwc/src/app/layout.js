@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,16 +14,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6VHWTCY7Z"></script>
-{/* <script>
-  {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-M6VHWTCY7Z');
-  `}
-  </script> */}
 <title>IronCityWatchCompany</title>
+<Script src="https://www.googletagmanager.com/gtag/js?id=G-M6VHWTCY7Z" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-M6VHWTCY7Z');
+        `}
+      </Script>
 
 <meta property="og:image" content="https://res.cloudinary.com/dypxraoci/image/upload/v1695758973/OpenGraph1_d6ozqc.png"/>
 <meta property="og:title" content="IronCityWatchCo. | Restorations | Repairs | Sourcing"/>
