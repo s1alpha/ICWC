@@ -11,6 +11,7 @@ import Image from "next/image";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import { useForm } from "react-hook-form";
+import { ErrorMessage } from "@hookform/error-message";
 import {
   Navbar,
   MobileNav,
@@ -134,8 +135,8 @@ export function Form() {
   };
 
   useEffect(() => {
-    console.log(loading);
-  }, []);
+    console.log("errors", errors);
+  }, [errors]);
 
   return (
     <>
@@ -145,15 +146,25 @@ export function Form() {
       >
         {/* <p className="mb-2 font-bold text-gray-600">Name:</p> */}
         <input
-          {...register("name")}
+          {...register("name", {
+            required: "required",
+          })}
           name="name"
+          aria-invalid={errors.name ? "true" : "false"}
           placeholder="Name"
           className="shadow-inner p-2 border-b-2 border-gray-400 text-black mb-4 w-[90vw] lg:w-[400px] rounded-sm focus:outline-none focus:border-r-4"
         />
+        {errors.name && (
+          <span className="text-stone-400 text-sm w-[90vw] lg:w-[400px] text-left mb-2">
+            <b className="font-bold text-xl text-orange-400">⚠</b> Name field is
+            required
+          </span>
+        )}
         {/* <p className="mb-2 text-gray-600 font-bold">Email: </p>{" "} */}
 
         <input
           {...register("email", {
+            required: "Email is required",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               message: "This is not a valid email",
@@ -166,12 +177,32 @@ export function Form() {
         <p className="lg:inline text-[10px] lg:text-[12px] text-gray-400 mb-4 w-full text-center w-[90vw] lg:w-[400px]">
           WE DO NOT SEND PROMOTIONAL CONTENT UNLESS OPTED IN
         </p>
+        {errors.email?.type === "required" && (
+          <span className="text-stone-400 text-sm w-[90vw] lg:w-[400px] text-left mb-2">
+            <b className="font-bold text-xl text-orange-400">⚠</b> Email field
+            is required
+          </span>
+        )}
+        {errors.email?.type === "pattern" && (
+          <span className="text-stone-400 text-sm w-[90vw] lg:w-[400px] text-left mb-2">
+            <b className="font-bold text-xl text-orange-400">⚠</b> Not a valid
+            email
+          </span>
+        )}
         <textarea
           name="message"
-          {...register("message")}
+          {...register("message", {
+            required: true,
+          })}
           placeholder="Message"
           className="min-h-[120px] text-black shadow-inner p-2 mb-12 border-b-2 border-gray-600 w-[90vw] lg:w-[400px] rounded-sm focus:outline-none focus:border-r-4"
         />
+        {errors.message && (
+          <span className="text-stone-400 text-sm w-[90vw] lg:w-[400px] text-left mb-2">
+            <b className="font-bold text-xl text-orange-400">⚠</b> A message is
+            required
+          </span>
+        )}
 
         {/* <p className="mb-2 text-gray-600 font-bold">Interest:</p> */}
         {/* <div className="max-w-[400px] p-2 shadow-inner border-2 mb-12">
@@ -194,7 +225,7 @@ export function Form() {
           <label className="flex flex-row gap-2">
             <input
               name="fruit"
-              {...register("fruit", { required: "Please select fruits" })}
+              {...register("fruit", { required: "Please select service" })}
               type="checkbox"
               value="Watch Repair"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
@@ -205,7 +236,7 @@ export function Form() {
           <label className="flex flex-row gap-2">
             <input
               name="fruit"
-              {...register("fruit", { required: "Please select fruits" })}
+              {...register("fruit", { required: "Please select service" })}
               type="checkbox"
               value="Timepiece Sourcing"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
@@ -216,7 +247,7 @@ export function Form() {
           <label className="flex flex-row gap-2">
             <input
               name="fruit"
-              {...register("fruit", { required: "Please select fruits" })}
+              {...register("fruit", { required: "Please select service" })}
               type="checkbox"
               value="General Assesment"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
@@ -227,7 +258,7 @@ export function Form() {
           <label className="flex flex-row gap-2">
             <input
               name="fruit"
-              {...register("fruit", { required: "Please select fruits" })}
+              {...register("fruit", { required: "Please select service" })}
               type="checkbox"
               value="Other"
               className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#182835] checked:bg-[#182835] checked:before:bg-[#182835] hover:before:opacity-10"
@@ -236,18 +267,24 @@ export function Form() {
             <p className="text-gray-600">&nbsp;Other</p>
           </label>
         </div>
+        {errors.fruit && (
+          <span className="text-stone-400 text-sm w-[90vw] lg:w-[400px] text-left mb-2">
+            <b className="font-bold text-xl text-orange-400">⚠</b> A servicing
+            selection is required
+          </span>
+        )}
 
         <div className="w-full flex justify-center mb-24">
           {" "}
           {loading ? (
-            <div className="lg:w-[200px] w-[80vw] bg-[#182835] flex justify-center items-center p-2 h-14 mt-8">
+            <div className="lg:w-[200px] w-[80vw] bg-[#182835] flex justify-center items-center p-2 h-14 mt-8 rounded-md">
               <Spinner />
             </div>
           ) : (
             <>
               {sent ? (
                 <div className="">
-                  <div className="lg:w-[400px] w-[80vw] bg-[#182835] flex justify-center items-center flex-col p-2 h-14 mt-8">
+                  <div className="lg:w-[400px] w-[80vw] bg-[#182835] flex justify-center items-center flex-col p-2 h-14 mt-8 rounded-md">
                     <p className="text-xl font-bold text-white">
                       <CheckCircleIcon style={{ color: "white" }} /> We will be
                       in touch shortly
